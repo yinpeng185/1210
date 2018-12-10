@@ -1,0 +1,81 @@
+<!--hh/hh.wxml-->
+<view class='view-page'>
+  <navbar page-name="{{numb}}条评论"></navbar>
+  <view class='page-content' style='height:calc(100vh - {{navH}}px);top:{{navH}}px'>
+    <view class='xiaoch'></view>
+    <view wx:for="{{arr}}" wx:key="" wx:for-index="index">
+      <view class='auforow fff' bindtap='plidon' data-name='{{item.user.nickName}}' data-plid='{{item.id}}' data-usid='{{item.user.id}}'>
+        <view class='imge2'>
+          <image class='imge2' catchtap='goto_home'  data-id='{{item.user.id}}' src='{{item.user.avatarUrl}}'></image>
+        </view>
+        <!-- <text class='shai'>(晒小主)</text> -->
+        <view class='aufocolumn erl'>
+          <view class='btex' catchtap='goto_home'  data-id='{{item.user.id}}'>{{item.user.nickName}} </view> 
+          <view class='bwu' >{{item.reply}}</view>
+        </view>
+      </view>
+      <view class='auforow2 dd'>
+        <view>
+          <view class='riq'>{{item.time}}</view>
+        </view>
+        <view class='dzan'  bindtap='onPostTap' data-plid='{{item.id}}' data-index='{{index}}' >
+          <image class='zan hh'src="{{item.hasChange?'/img/zan-img.png':'/img/zan.png'}}"></image>
+          <view class='shut'>{{item.num}}</view>
+
+          <!-- <image class='zan hu' hidden="{{userhid==userId?false:true}}"  data-name='{{item.user.nickName}}' catchtap="powerDrawer" data-statu="open" data-plid='{{item.id}}' data-usid='{{item.user.id}}' src='/img/ph.png'></image> -->
+          <!-- <image class='zan hu' hidden="{{userhid==userId?true:false}}"  data-name='{{item.user.nickName}}' bindtap='plidon' data-plid='{{item.id}}' data-usid='{{item.user.id}}' src='/img/ph.png'></image> -->
+        </view>
+      </view>
+
+      <!-- 回复 {{item.to_user_id.nickName}} <text class='shai'>(晒小主)</text> -->
+      <view class='huy' wx:if="{{item.replyss.length!=0}}">
+        <view class='nuh' wx:for="{{item.replyss}}" wx:key="index" bindtap='plplpl' data-name='{{item.from_user_id.nickName}}'>
+          <!-- <view class='nuhzt'><text class='bluecolor'>{{item.from_user_id.nickName}}</text> 回复了 <text class='bluecolor'>{{item.to_user_id.nickName}}</text> -->
+          <view class='nuhzt'><text class='bluecolor' catchtap='goto_home'  data-id='{{userId}}'>{{item.from_user_id.nickName}} </text> 回复了 <text class='bluecolor' catchtap='goto_home'  data-id='{{userId}}'>{{item.to_user_id.nickName}} </text>
+                <text >：{{item.replys}}</text>
+          </view>
+        </view>
+        <view class='eee auforow'>
+          <view class='erl' bindtap='comment' data-id="{{id}}" data-plid="{{item.id}}" data-index='{{index}}'>查看更多</view>
+          <image class='yimg' src='/img/yo.png'></image>
+        </view>
+      </view>
+    </view>
+
+    <view class='jbb'></view>
+
+    <!-- show:true,  -->
+    <view class='djdzx' wx:if="{{show}}">
+      <form report-submit='true' bindsubmit='send_form'>
+        <view class='xiaoch'></view>
+        <view class='auforow ro1'>
+          <image class='imge2' src='{{avatarUrl}}'></image>
+          <textarea class='inp' auto-height placeholder='回复  {{name}}  ：' bindinput='get_input' value='{{reply_content}}'></textarea>
+          <button class='button' hover-class="none" form-type='submit'>发送</button>
+        </view>
+      </form>
+    </view>
+
+
+    <!-- 回复 -->
+    <!--button-->
+    <!-- <view class="btn">button</view> -->
+    <!--mask-->
+    <view class="drawer_screen" bindtap="powerDrawer" data-statu="close" wx:if="{{showModalStatus}}"></view>
+    <!--content-->
+    <!--使用animation属性指定需要执行的动画-->
+    <view animation="{{animationData}}" class="drawer_attr_box" wx:if="{{showModalStatus}}">
+      <!--drawer content-->
+      <view class="drawer_content">
+        <view class="drawer_titles line">也平凡官微：立冬了小平凡正在向你发射秋裤警告[doge]...</view>
+        <!-- <view class="drawer_title line">回复</view> -->
+        <view class="drawer_title line" bindtap='pb' hidden='{{usid==userId}}' data-statu="close" wx:if="{{showModalStatus}}">屏蔽</view>
+        <view class="drawer_title line" bindtap='shanchu' data-statu="close" wx:if="{{showModalStatus}}">删除</view>
+        <view class="drawer_title line" bindtap='ts' hidden='{{usid==userId}}' data-statu="close" wx:if="{{showModalStatus}}">投诉</view>
+        <view class="drawer_title" bindtap='powerDrawereeee' data-statu="close" wx:if="{{showModalStatus}}">回复</view>
+        <view class='xiaotiao'></view>
+        <view class="drawer_title" bindtap="powerDrawer" data-statu="close" wx:if="{{showModalStatus}}">取消</view>
+      </view>
+    </view>
+  </view>
+</view>
