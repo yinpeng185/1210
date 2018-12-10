@@ -1,0 +1,21 @@
+<!--pages/news/comment/comment.wxml-->
+<import src="../public/public.wxml" />
+<nav-bar navbar-data='{{nvabarData}}'></nav-bar>
+<view class='home-page' style='margin-top: {{height}}px'> </view>
+<view class='newsxitiao' style="top:{{height}}px"></view>
+<view class='message_Box' style='height:{{page_height}}px'>
+<!-- <view class='message_Item' wx:for="{{comment_box}}" wx:key="item" bindtap='goto' data-id='{{item.issue_id}}'> -->
+<view class='message_Item' wx:for="{{comment_box}}" wx:key="item" bindtap='goto' data-user_id='{{item.user_id}}' data-user_name='{{item.nickName}}' data-id='{{item.issue_id}}' data-comment_id='{{item.id}}'>
+    <view class='line_block'></view>
+    <image src='{{item.avatarUrl}}' class='avatar'></image>
+    <view class='middle_text'>
+    <text class='user_name'>{{item.nickName}} 评论了你的晒晒</text>
+    <text class='message_time'>{{item.create_date}}</text>
+    </view>
+    <view class='article_img_box'>
+    <image src="{{item.image}}" class='article_img'></image>
+    </view>
+  </view>
+  <view class='line_block'></view>
+  <view class='load_more' bindtap='load_more'>点击查看更多</view>
+</view>

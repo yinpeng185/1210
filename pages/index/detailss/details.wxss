@@ -1,0 +1,731 @@
+/* pages/home/details/details.wxss */
+
+page {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.view-page {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+  position: absolute;
+  overflow: hidden;
+}
+
+.page-content {
+  box-sizing: border-box;
+  position: relative;
+  overflow-y: auto;
+  top: 70px;
+}
+
+.dcolumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.drow {
+  display: flex;
+  flex-direction: row;
+}
+
+.rightt {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+/* TTT */
+
+.bfb {
+  width: 100%;
+  height: 872rpx;
+}
+
+.deimgda {
+  width: 100%;
+  height: 872rpx;
+}
+
+.bqwz {
+  position: relative;
+  top: -560rpx;
+  left: 515rpx;
+}
+
+.bq {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 150rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  text-align: center;
+  border: 0rpx solid rgba(0, 0, 0, 0.3);
+  border-radius: 20rpx;
+  font-size: 24rpx;
+  color: #fff;
+  /* font-weight: bold; */
+  font-family: Arial, Helvetica;
+}
+
+.fximg {
+  position: relative;
+  top: -852rpx;
+  float: left;
+  height: 40rpx;
+  margin-left: 310rpx;
+}
+
+.fxztdx {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 60rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  text-align: center;
+  border: 0rpx solid rgba(0, 0, 0, 0.4);
+  border-radius: 20rpx;
+  font-size: 28rpx;
+  color: #fff;
+  font-weight: bold;
+  font-family: Arial, Helvetica;
+}
+
+.fshu {
+  font-size: 28rpx;
+}
+
+.shirr {
+  padding-right: 10rpx;
+}
+
+.fxtbimg {
+  width: 32rpx;
+  height: 30rpx;
+  line-height: 40rpx;
+  padding-bottom: 5rpx;
+}
+
+.yshu {
+  padding-left: 360rpx;
+}
+
+/* TTT */
+
+/* H HHyyy*/
+
+.hh {
+  width: 690rpx;
+  margin-top: 20rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  /* background-color: rebeccapurple; */
+  height: 80rpx;
+}
+
+.guz {
+  background-color: #e4007f;
+  width: 120rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  border: 0rpx solid #e4007f;
+  border-radius: 25rpx;
+  font-size: 24rpx;
+  color: #fff;
+}
+
+.imgdxnews {
+  height: 80rpx;
+  width: 80rpx;
+  border-radius: 50%;
+}
+
+.ty {
+  padding-top: 8rpx;
+  padding-left: 20rpx;
+}
+
+.zantid {
+  font-size: 26rpx;
+  color: #426584;
+}
+
+.shi {
+  padding-top: 10rpx;
+}
+
+.yojt {
+  font-size: 20rpx;
+  color: #999;
+  padding-top: 10rpx;
+}
+
+.erlll {
+  padding-left: 20rpx;
+  padding-bottom: 20rpx;
+  padding-top: 15rpx;
+}
+
+/* H HHyyy*/
+
+/* KKK */
+
+.nuh {
+  width: 690rpx;
+  height: auto;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  margin-top: 40rpx;
+  /* background-color: royalblue; */
+}
+
+.nuhzt {
+  font-size: 30rpx;
+  color: #333;
+}
+
+.hss {
+  font-size: 32rpx;
+  color: #e4be29;
+  font-weight: bold;
+}
+
+/* KKK */
+
+/* LLL */
+
+.wz {
+  width: 690rpx;
+  height: 121rpx;
+  background-color: #f2f2f2;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  margin-top: 20rpx;
+}
+
+.ztdax {
+  font-size: 28rpx;
+  color: #333;
+}
+
+.wzdx {
+  width: 19rpx;
+  height: 24rpx;
+}
+
+.wssdx {
+  font-size: 24rpx;
+  color: #999;
+  line-height: 24rpx;
+}
+
+.topbbb {
+  padding-top: 20rpx;
+}
+
+.ztdax {
+  font-size: 28rpx;
+  color: #333;
+  margin-top: 15rpx;
+}
+
+.erlp {
+  padding-left: 20rpx;
+}
+
+.ll {
+  padding-left: 10rpx;
+}
+
+.tb {
+  padding-bottom: 15rpx;
+  margin-top: 20rpx;
+}
+
+/* LLL */
+
+.xxiao {
+  width: 100%;
+  height: 20rpx;
+  background-color: #f9f9f9;
+  margin-top: 20rpx;
+}
+
+/* PPPP */
+
+.pll {
+  width: 690rpx;
+  height: 40rpx;
+  background-color: #fff;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  margin-top: 30rpx;
+}
+
+.plda {
+  font-size: 30rpx;
+  color: #333;
+}
+
+.zdaad {
+  font-size: 26rpx;
+  color: #7f7f7f;
+}
+
+.rrr {
+  padding-right: 15rpx;
+}
+
+.yoqsdx {
+  width: 14rpx;
+  height: 24rpx;
+}
+
+/* PPPP */
+
+/* AAAAAA */
+
+.hye {
+  width: 690rpx;
+  height: auto;
+  margin-left: 30rpx;
+  margin-right: 35rpx;
+  background-color: #fff;
+  margin-top: 30rpx;
+  margin-bottom: 10rpx;
+}
+
+.tttxxxdx {
+  width: 65rpx;
+  height: 65rpx;
+}
+
+.er {
+  padding-top: 2rpx;
+}
+
+.kkkssjl {
+  padding-left: 20rpx;
+}
+
+.klxxnd {
+  font-size: 30rpx;
+  color: #7f7f7f;
+  background-color: #f9f9f9;
+  width: 600rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  border: 0rpx solid #f9f9f9;
+  border-radius: 35rpx;
+}
+
+.xxxlc {
+  padding-left: 30rpx;
+}
+
+/* AAAAAA */
+
+/* PJJJ */
+
+.pjnr {
+  padding-left: 30rpx;
+  padding-top: 40rpx;
+}
+
+.llle {
+  margin-left: 30rpx;
+  margin-bottom: 30rpx;
+  background-color: #fff;
+}
+
+.pjnrinmg {
+  width: 75rpx;
+  height: 75rpx;
+}
+
+.ztdx {
+  font-size: 28rpx;
+  color: #666;
+}
+
+.mmnr {
+  font-size: 30rpx;
+  color: #333;
+  padding-top: 20rpx;
+}
+
+/* PJJJ */
+
+.shjrqpl {
+  width: 595rpx;
+  margin-left: 115rpx;
+  margin-right: 40rpx;
+  background-color: #fff;
+  margin-bottom: 30rpx;
+}
+
+.qizida {
+  font-size: 22rpx;
+  color: #999;
+}
+
+.plddx {
+  font-size: 26rpx;
+  color: #7f7f7f;
+}
+
+.dds {
+  font-size: 26rpx;
+  color: #333;
+  width: 545rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  margin-top: 20rpx;
+}
+
+.ckgd {
+  font-size: 26rpx;
+  color: #588ac8;
+  width: 545rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  margin-top: 20rpx;
+}
+
+.nskk {
+  width: 9rpx;
+  height: 16rpx;
+}
+
+.fkk {
+  width: 605rpx;
+  height: 166rpx;
+  border-radius: 4rpx;
+  background-color: #f9f9f9;
+  margin-left: 115rpx;
+  margin-right: 30rpx;
+}
+
+.fkku {
+  width: 545rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  /* margin-top: 20rpx; */
+  background-color: rebeccapurple;
+  /* height: 68rpx; */
+}
+
+.sddhi {
+  padding-left: 10rpx;
+}
+
+.gdd {
+  width: 545rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  /* margin-top: 20rpx; */
+  background-color: rebeccapurple;
+}
+
+.kj {
+  width: 100%;
+  height: 91rpx;
+}
+
+/* HHHHHHHHHHHHHHHHHH */
+
+.plxt {
+  width: 100%;
+  height: 1rpx;
+  background-color: #ccc;
+  margin-top: 30rpx;
+}
+
+.djdzx {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.djfff {
+  width: 100%;
+  height: 91rpx;
+  background-color: #fff;
+}
+
+.zdhao {
+  padding-top: 26rpx;
+}
+
+.sl {
+  padding-left: 36rpx;
+}
+
+.dzshimg {
+  width: 34rpx;
+  height: 30rpx;
+}
+
+.shud {
+  font-size: 24rpx;
+  color: #333;
+}
+
+.ler {
+  padding-left: 15rpx;
+}
+
+.lertop {
+  padding-top: 15rpx;
+}
+
+.dian {
+  height: 8rpx;
+  width: 8rpx;
+  background-color: #333;
+  border-radius: 50%;
+}
+
+.xist {
+  padding-left: 36rpx;
+}
+
+.hx {
+  height: 30rpx;
+  background-color: #ccc;
+  width: 2rpx;
+}
+
+/* HHHHHHHHHHHHHHH */
+
+/* YYYYYYYYY */
+
+.defx {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.defxjd {
+  width: 100%;
+  height: auto;
+  border-radius: 42rpx 42rpx 0rpx 0rpx;
+  background-color: #e5e5e5;
+}
+
+.deziti {
+  padding-top: 45rpx;
+  margin-left: 40rpx;
+  margin-right: 40rpx;
+  width: 670rpx;
+  height: auto;
+  font-size: 36rpx;
+  color: #0e0d0d;
+}
+
+.dezimg {
+  padding-top: 45rpx;
+  margin-left: 8rpx;
+  /* padding-right: 63.6rpx; */
+  height: auto;
+}
+
+.ss {
+  margin-left: 32rpx;
+}
+
+.imdedx {
+  width: 108rpx;
+  height: 108rpx;
+}
+
+.imgzit {
+  font-size: 20rpx;
+  color: #333;
+  width: 108rpx;
+  height: auto;
+  text-align: center;
+  padding-top: 20rpx;
+}
+
+.quxtop {
+  margin-top: 50rpx;
+}
+
+.qux {
+  width: 100%;
+  height: 98rpx;
+  font-size: 36rpx;
+  color: #333;
+  background-color: #fff;
+  line-height: 98rpx;
+  text-align: center;
+  border: 0rpx solid #f9f9f9;
+}
+
+/* YYYYYYYYYYY */
+
+.hss {
+  font-size: 32rpx;
+  color: #e4be29;
+  font-weight: bold;
+}
+
+/* HHHH */
+
+.jbbk {
+  background-color: #f0b718;
+  width: 54rpx;
+  height: 28rpx;
+  line-height: 28rpx;
+  text-align: center;
+  border: 0rpx solid #f0b718;
+  border-radius: 14rpx;
+  font-size: 20rpx;
+  color: #fff;
+}
+
+.guz {
+  background-color: #e4007f;
+  width: 120rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  border: 0rpx solid #e4007f;
+  border-radius: 25rpx;
+  font-size: 24rpx;
+  color: #fff;
+}
+
+.nuh {
+  width: 690rpx;
+  height: auto;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  margin-top: 40rpx;
+}
+
+.djdzx {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.djfff {
+  width: 100%;
+  height: 91rpx;
+  background-color: #fff;
+}
+
+.zhk {
+  font-size: 30rpx;
+  color: #000;
+  font-weight: bold;
+}
+
+/* 修改 */
+
+.zf {
+  width: 36rpx;
+  height: 32rpx;
+}
+
+.zf-shu {
+  font-size: 24rpx;
+  color: #333;
+}
+
+.rrqw {
+  margin-left: 50rpx;
+  margin-right: 50rpx;
+  margin-top: 30rpx;
+}
+
+.sw {
+  margin-right: 15rpx;
+}
+
+.sww {
+  margin-left: 15rpx;
+}
+
+.es {
+  margin-right: 20rpx;
+}
+
+.yt {
+  background-color: #f1f4f6;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  margin-top: 20rpx;
+  width: 690rpx;
+}
+
+.yt-t {
+  /* background-color: rosybrown; */
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  margin-top: 20rpx;
+}
+
+.er3 {
+  font-size: 26rpx;
+  color: #333;
+}
+
+.yt-ck {
+  font-size: 26rpx;
+  color: #588ac8;
+}
+
+.nskk {
+  width: 9rpx;
+  height: 16rpx;
+  margin-left: 10rpx;
+  margin-top: 0.5%;
+}
+
+.eee {
+  align-items: center;
+  margin-left: 30rpx;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  background-color: #f1f4f6;
+  height: 34rpx;
+}
+
+.xg {
+  font-size: 36rpx;
+  color: #333;
+  margin-left: 30rpx;
+  margin-top: 20rpx;
+}
+@import "../../public/public.wxss";
+
+/* 内容 */
+
+.content {
+  margin: 0 1%;
+}
+
+.item-view {
+  width: 50%;
+  float: left;
+  /* background-color: royalblue */
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+/* 内容 */

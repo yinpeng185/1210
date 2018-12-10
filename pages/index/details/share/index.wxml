@@ -1,0 +1,17 @@
+<!--海报  -->
+<nav-bar navbar-data='{{nvabarData}}'></nav-bar>
+<view class='home-page' style='margin-top: {{height}}px'>
+</view>
+<view class='view-page'>
+  <view class='dcolumn'>
+    <view class='load tc' wx:if='{{loadhide}}'>
+  <text class='loading-icon'></text> 正在生成中...
+</view>
+
+    <canvas canvas-id='myCanvas' hidden='{{cavhide}}' style="width: {{c_w}}px; height: {{c_h}}px;"></canvas>
+    <image src="{{imgurl}}" class='cavimg' hidden='{{imghide}}' mode='widthFix'></image>
+    <button class='savePicBtn mainColor_bg' bindtap='goHome'>返回首页</button>
+    <button class='savePicBtn mainColor_bg home' bindtap='savePic'>保存图片</button>
+  </view>
+
+</view>

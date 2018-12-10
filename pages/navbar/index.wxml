@@ -1,0 +1,24 @@
+<view class='nav-wrap' style='height: {{navH}}px;'>
+  <!-- // 导航栏 中间的标题 -->
+  <view class='navbar-title' style=''>{{navbarData.title}}</view>
+  <view style='display: flex; justify-content: space-around;flex-direction: column'>
+
+    <view class="navbar-action-wrap {{!share ? 'navbar-action-group' : ''}} row item-center "  style='' wx:if='{{navbarData.showCapsule}}'>
+      <!-- <view bindtap='_navback' wx:if='{{!share}}'>
+        <image src='/images/nav/iconzuo.png' mode='aspectFill' class='back-pre'></image>
+      </view>
+      <view class='navbar-v-line' wx:if='{{!share}}'></view>
+      <view bindtap='_backhome'>
+        <image src='/images/nav/iconhome.png' mode='aspectFill' class='back-home'></image>
+      </view> -->
+
+      <block wx:if="{{!share}}">
+        <ss-icon name="zuo" color="#333" size="15px" custom-class="navbar-action_item first" bind:click="_navback"></ss-icon>
+        <ss-icon name="index" color="#333" size="15px" custom-class="navbar-action_item" bind:click="_backhome"></ss-icon>
+      </block>
+      <block wx:else>
+        <ss-icon name="zuo" color="#fff" size="18px" custom-class="navbar-action_item first" bind:click="_navback"></ss-icon>
+      </block>
+    </view>
+  </view>
+</view>

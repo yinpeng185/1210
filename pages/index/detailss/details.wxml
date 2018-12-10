@@ -1,0 +1,167 @@
+<!--pages/home/details/details.wxml-->
+<import src="../../public/public.wxml" />
+<view class='view-page'>
+  <navbar page-name="小太阳的晒晒"></navbar>
+  <view class='page-content' style='height:calc(100vh - {{navH}}px)'>
+
+    <view class='dcolumn'>
+      <view class='bfb'>
+        <swiper autoplay="true" duration="2000" bindscrolltoupper="listenSwiper" class='bfb'>
+          <swiper-item>
+            <image class='deimgda' src="/images/hnr/hxq/dt.png" />
+            <view class='bqwz'>
+              <view class='bq'>#西式甜点</view>
+            </view>
+            <view class='bqwz' style='top:  -520rpx;'>
+              <view class='bq'>#美食攻略</view>
+            </view>
+          </swiper-item>
+          <swiper-item>
+            <image class='deimgda' src="/images/hnr/hxq/dt.png" />
+            <view class='bqwz'>
+              <view class='bq'>#中国甜点</view>
+            </view>
+            <view class='bqwz' style='top:  -520rpx;'>
+              <view class='bq'>#情景攻略</view>
+            </view>
+          </swiper-item>
+        </swiper>
+        <view class='fximg '>
+          <view class='yshu left'>
+            <view class='fxztdx fshu'>1/3</view>
+          </view>
+          <view class='rightt'>
+            <!-- <view class='fxztdx' bindtap='showfx'>分享</view> -->
+          </view>
+          <view class='shirr rightt' bindtap='showfx'>
+            <!-- <image class='fxtbimg' src='/images/hnr/hxq/fxtb.png'></image> -->
+          </view>
+        </view>
+      </view>
+      <!-- HHHHH -->
+      <view class='hh'>
+        <view class='left'>
+          <image class='imgdxnews' src='/images/news/fabulous/zan.png'></image>
+        </view>
+        <view class='left ty'>
+          <view class='zantid'>小太阳</view>
+          <view class='yojt'>7月28日
+          </view>
+        </view>
+        <view class='rightt shi'>
+          <view class='guz'>关注</view>
+        </view>
+      </view>
+      <!-- HHHH -->
+      <view class='nuh'>
+        <view class='nuhzt'>网络点评运营特别好,绑定多多多 算得 范德萨发付费范德萨苟富贵非
+          <text class="hss">
+      <text>#美食# </text>
+          <text>@阅读</text>
+          </text>大幅度辅导费..
+          <text class='zhk rightt'>展开</text>
+        </view>
+      </view>
+      <!-- HHHH -->
+      <view class='wz dcolumn'>
+        <view class='erlp'>
+          <view class='ztdax'>杭州黄齑淡饭活动时间的解放后的</view>
+          <view class='drow tb'>
+            <image class='wzdx' src='/images/hnr/hxq/dw.png'></image>
+            <view class='wssdx ll'>杭州江干区下沙区</view>
+          </view>
+        </view>
+      </view>
+
+      <view class='rrqw'>
+        <view class='drow left' bindtap='showfx'>
+          <image class='zf' src='/img/zf.png'></image>
+          <view class='zf-shu sww'>14</view>
+        </view>
+        <view class='drow rightt'>
+          <image class='zf sw' src='/img/zan.png'></image>
+          <view class='zf-shu es'>13万</view>
+          <image class='zf sw' src='/img/pl.png'></image>
+          <view class='zf-shu es'>1114</view>
+          <image class='zf sw' src='/img/sc.png'></image>
+          <view class='zf-shu'>1114</view>
+        </view>
+      </view>
+
+      <view class='yt'>
+        <view class='yt-t er3'>
+          Vdfdfdfdsf : 哇，和很多单的放大法发过的独嘻嘻~谢谢d范德ssss萨第三方的
+        </view>
+        <view class='drow  eee'>
+          <view class='yt-ck'>查看更多</view>
+          <image class='nskk' src='/img/ck.png'></image>
+        </view>
+      </view>
+
+      <view class='hye'>
+        <view class='left er'>
+          <image class='tttxxxdx' src='/images/hnr/hxq/tttxxx.png'></image>
+        </view>
+        <view class='kkkssjl rightt'>
+          <view class='klxxnd'>
+            <view class='xxxlc'>
+              <input class='hue' placeholder='快来写下你的评论吧'></input>
+            </view>
+          </view>
+        </view>
+      </view>
+
+      <view class='xxiao'></view>
+
+      <view class='xg'>相关推荐</view>
+
+      <scroll-view scroll-y="true" bindscrolltolower="lower" data-lastid="{{lastid}}">
+        <view class='content'>
+          <view class="item-view">
+            <block wx:for="{{dataArray}}" wx:key="" wx:for-index="index">
+              <template is="item" data="{{...item ,index}}" wx:if="{{index%2==0}}"></template>
+            </block>
+          </view>
+          <view class="item-view">
+            <block wx:for="{{dataArray}}" wx:key="" wx:for-index="index">
+              <template is="item" data="{{...item ,index}}" wx:if="{{index%2==1}}"></template>
+            </block>
+          </view>
+        </view>
+      </scroll-view>
+      <!-- HHH -->
+      <view class='defx' wx:if="{{show_fenxiang}}">
+        <view class='defxjd'>
+          <view class='deziti'>
+            分享到
+          </view>
+          <view class='drow dezimg'>
+            <view class='ss'>
+              <image class='imdedx' src='/images/hnr/hxq/wxdup.png'></image>
+              <view class='imgzit'>微信好友</view>
+            </view>
+            <view class='ss'>
+              <image class='imdedx' src='/images/hnr/hxq/hb.png'></image>
+              <view class='imgzit'>生成海报</view>
+            </view>
+            <view class='ss'>
+              <image class='imdedx' src='/images/hnr/hxq/ct.png'></image>
+              <view class='imgzit'>生成长图</view>
+            </view>
+            <view class='ss' bindtap='reportTop'>
+              <image class='imdedx' src='/images/hnr/hxq/ts.png'></image>
+              <view class='imgzit'>举报</view>
+            </view>
+          </view>
+          <view class='quxtop'>
+            <view class='plxt'></view>
+            <view class='qux' bindtap='showfxqx'>
+              取消
+            </view>
+          </view>
+        </view>
+      </view>
+      <!-- HHH -->
+    </view>
+  </view>
+</view>

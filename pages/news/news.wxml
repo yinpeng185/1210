@@ -1,0 +1,124 @@
+<nav-bar navbar-data='{{nvabarData}}'></nav-bar>
+<view class='home-page' style='margin-top: {{height}}px'>
+</view>
+<view class='newsxitiao'></view>
+<view class='newwjl newscolumn'>
+  <view class='newsxitiao'></view>
+
+  <view>
+    <view class='hh' bindtap='fabTop'>
+      <view class='ll'>
+        <image class='imgdxnews' src='/images/news/zan.png'></image>
+      </view>
+      <view class='ll fw'>
+        <view class='zantid'>收到的赞</view>
+      </view>
+      <view class='rr ssimg'>
+        <view class='newsrow'>
+          <view class='dain' wx:if="{{tz.DianZan.status==0?true:false}}" ></view>
+          <image class='jtimgdx' src='/images/news/jt.png'></image>
+        </view>
+
+      </view>
+    </view>
+    <view class='newsxitiao'></view>
+  </view>
+
+  <view>
+    <view class='hh' bindtap='collTop'>
+      <view class='ll'>
+        <image class='imgdxnews' src='/images/news/sc.png'></image>
+      </view>
+      <view class='ll fw'>
+        <view class='zantid'>收藏</view>
+      </view>
+      <view class='rr ssimg'>
+        <view class='newsrow'>
+          <view class='dain' wx:if="{{tz.ShouStatus.status==0?true:false}}"></view>
+          <image class='jtimgdx' src='/images/news/jt.png'></image>
+        </view>
+
+      </view>
+    </view>
+    <view class='newsxitiao'></view>
+  </view>
+
+
+
+  <view>
+    <view class='hh' bindtap='plTop'>
+      <view class='ll'>
+        <image class='imgdxnews' src='/images/news/pl.png'></image>
+      </view>
+      <view class='ll fw'>
+        <view class='zantid'>收到的评论</view>
+      </view>
+      <view class='rr ssimg'>
+        <view class='newsrow'>
+          <view class='dain' wx:if="{{tz.pinglunstatus.status==0?true:false}}" ></view>
+          <image class='jtimgdx' src='/images/news/jt.png'></image>
+        </view>
+
+      </view>
+    </view>
+    <view class='newsxitiao'></view>
+  </view>
+
+  <view>
+    <view class='hh' bindtap='woaTop'>
+      <view class='ll'>
+        <image class='imgdxnews' src='/images/news/wo.png'></image>
+      </view>
+      <view class='ll fw'>
+        <view class='zantid'>@我的</view>
+      </view>
+      <view class='rr ssimg'>
+        <view class='newsrow'>
+          <view class='dain' wx:if="{{tz.atuser.status==0?true:false}}"></view>
+          <image class='jtimgdx' src='/images/news/jt.png'></image>
+        </view>
+
+      </view>
+    </view>
+    <view class='newsxitiao'></view>
+  </view>
+
+
+  <view>
+    <view class='hh' bindtap='fansTop'>
+      <view class='ll'>
+        <image class='imgdxnews' src='/images/news/fs.png'></image>
+      </view>
+      <view class='ll fw'>
+        <view class='zantid'>新增粉丝</view>
+      </view>
+      <view class='rr ssimg'>
+        <view class='newsrow'>
+          <view class='dain' wx:if="{{tz.fanstatus.status==0?true:false}}"></view>
+          <image class='jtimgdx' src='/images/news/jt.png'></image>
+        </view>
+      </view>
+    </view>
+    <view class='newsxitiao'></view>
+  </view>
+
+
+  <view bindtap='noTop'>
+    <view class='hh'>
+      <view class='ll'>
+        <image class='imgdxnews' src='/images/news/tzh.png'></image>
+      </view>
+      <view class='ll ty'>
+        <view class='zantid'>通知</view>
+        <view class='yojt'>游戏的当地睡沙发</view>
+      </view>
+      <view class='rr ff'>
+        <!-- <view class='jt'>
+          今天 13:35
+        </view> -->
+        <view class='dain' wx:if="{{tz.tongzhi.status==0?true:false}}"></view>
+      </view>
+    </view>
+    <view class='newsxitiao'></view>
+  </view>
+</view>

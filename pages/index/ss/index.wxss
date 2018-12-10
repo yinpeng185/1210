@@ -1,0 +1,99 @@
+/* pages/index/ss/index.wxss */
+
+page {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.view-page {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+  position: absolute;
+  overflow: hidden;
+}
+
+.page-content {
+  box-sizing: border-box;
+  position: relative;
+  overflow-y: auto;
+}
+
+.dcolumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.drow {
+  display: flex;
+  flex-direction: row;
+}
+
+/* 搜索 */
+
+.fhh {
+  height: 60rpx;
+  width: 100%;
+  background-color: #fff;
+}
+
+.fss {
+  width: 690rpx;
+  height: 60rpx;
+  background-color: #f4f4f4;
+  border: 0px solid #f2f2f2f2;
+  border-radius: 32rpx;
+  margin: 0 30rpx;
+}
+
+.hl {
+  height: 60rpx;
+  line-height: 60rpx;
+}
+
+.fssrn {
+  font-size: 29rpx;
+  color: #999;
+  padding-left: 15rpx;
+}
+
+.fimgdx {
+  width: 27rpx;
+  height: 27rpx;
+  padding-left: 20rpx;
+}
+
+/* 搜索 */
+
+/* 选择搜索 */
+
+.mu {
+  margin: 40rpx 159.5rpx 20rpx 159.5rpx;
+}
+
+.mu-tex {
+  font-size: 30rpx;
+  color: #999;
+  /* background-color: red; */
+}
+
+.mu-img {
+  width: 60rpx;
+  height: 4rpx;
+  padding-top: 10rpx;
+  /* background-color: rebeccapurple; */
+}
+
+.mu-mu {
+  padding: 0 42.5rpx 0 42.5rpx;
+}
+
+.erhx{
+  height: 20rpx;
+  width: 100%;
+  background-color: #f1f4f6;
+}

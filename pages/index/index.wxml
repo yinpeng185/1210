@@ -1,0 +1,53 @@
+<!-- <nav-bar navbar-data='{{nvabarData}}'></nav-bar> -->
+<view class='one' style='margin-top: {{height}}px;'>
+  <view class='top'>
+    <text class='recom1 recom'>发现</text>
+    <text class='recom2'>|</text>
+    <text class='lantextss' bindtap="onHome" data-address="{{address?address:'同城'}}">{{address?address:'同城'}}</text>
+  </view>
+  <view class='dsh' wx:if="{{disabled}}">
+    <image class='dsh-tup' src='/img/tish.png'></image>
+    <view class='dsh-te'>点击添加到我的小程序</view>
+  </view>
+</view>
+
+<import src="../public/public.wxml" />
+
+<view class='view-page'>
+
+  <!--这里放你的内容-->
+  <view class='fcolumnntainer'>
+    <view class='fhh'>
+      <view class='fss '>
+        <view class='frowcontainer hl'>
+          <view>
+            <image class='fimgdx' src='/images/follow/ss.png'></image>
+          </view>
+          <input class='fssrn hl' placeholder='请输入搜索内容'></input>
+        </view>
+      </view>
+    </view>
+  </view>
+  <scroll-view scroll-y="true" style="height:100%" bindscrolltolower="lower" data-lastid="{{lastid}}">
+    <view class='content'>
+      <view class="item-view">
+        <block wx:for="{{dataArray}}" wx:key="" wx:for-index="index">
+          <template is="item" data="{{...item ,index}}" wx:if="{{index%2==0}}"></template>
+        </block>
+      </view>
+      <view class="item-view">
+        <block wx:for="{{dataArray}}" wx:key="" wx:for-index="index">
+          <template is="item" data="{{...item ,index}}" wx:if="{{index%2==1}}"></template>
+        </block>
+      </view>
+    </view>
+  </scroll-view>
+
+
+<!--  -->
+  <view class='dlu' style="background-image: url('/img/denglu.png');background-size:cover" wx:if="{{!userhhh.avatarUrl}}">
+    <button class='button' hover-class="none" lang="zh_CN" open-type="getUserInfo" bindgetuserinfo="onGotUserInfo" >
+      <image class='erww' src='/img/annu.png'></image>
+    </button>
+  </view>
+</view>

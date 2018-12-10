@@ -1,0 +1,19 @@
+<!--pages/news/fans/fans.wxml-->
+<!-- <import src="../public/public.wxml" /> -->
+<nav-bar navbar-data='{{nvabarData}}'></nav-bar>
+<view class='home-page' style='margin-top: {{height}}px'> </view>
+<view class='newsxitiao' style="top:{{height}}px"></view>
+<view class='message_Box' style='height:{{page_height}}px'>
+  <view class='message_Item' wx:for="{{fans_box}}"  wx:key="item">
+    <image src='{{item.avatarUrl}}' class='avatar' bindtap='goto_home' data-id='{{item.id}}'></image>
+    <view class='middle_text'>
+      <text class='user_name'>{{item.nickName}} <text class='user_name-tes'>成为了你的粉丝</text></text>
+      <text class='message_time'>{{item.autograph_name?item.autograph_name:'未设置个性签名'}}</text>
+    </view>
+    <view class="{{item.zhuangtai==1?'article_img_wei':'article_img_box '}}" bindtap='goto_fans' data-id='{{item.id}}'>
+      {{item.zhuangtai==1?'已关注':'关注'}}
+    </view>
+    <view class='line_block_min'></view>
+  </view>
+  <view class='load_more' bindtap='load_more'>点击查看更多</view>
+</view>

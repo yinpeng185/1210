@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "切换城市",
+      "usingComponents": {
+        "nav-bar": "/pages/navbar/index"
+      }
+}

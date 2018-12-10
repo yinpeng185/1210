@@ -1,0 +1,55 @@
+<import src="../../public/public.wxml" />
+<view class='view-page'>
+  <navbar page-name="{{city}}"></navbar>
+  <view class='page-content' style='height:calc(100vh - {{navH}}px); top:{{navH}}px'>
+    <!--这里放你的内容-->
+    <!-- 头部 -->
+    <view class='hhome'>
+      <view class='home'>
+        <view class='l'>
+          <view class='hcontainer dax'catchtap='city'>
+            <view>
+              <image class="himgdx" src='/images/icon/tp.png'></image>
+            </view>
+            <view class='tetcity'>{{city?city:"地址"}}</view>
+            <view class='zttop'>
+              <image class="xlhimgdx" src='/images/icon/xl.png'></image>
+            </view>
+          </view>
+        </view>
+        <view class='r'>
+          <view class="bk">
+            <view class='hcontainer'>
+              <input class='htext' placeholder='请搜索内容'></input>
+              <view class='imgrr'>
+                <image class='hss' src='/images/icon/ss.png'></image>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='scroll-lan'>
+      <scroll-view scroll-x class="scroll-view_H">
+        <text class="lantext {{childCid==0?'active':''}}" data-xzid='0' catchtap="onTab">推荐</text>
+        <text class="lantext {{childCid==item.id?'active':''}}" wx:key="id" wx:for-index="index" wx:for="{{category}}" catchtap='onTab' data-xzid="{{item.id}}" wx:for-item="item">{{item.name}}</text>
+      </scroll-view>
+    </view>
+    <!-- 内容 -->
+
+    <scroll-view scroll-y="true" style="height:100%;  background-color: #f1f4f6" bindscrolltolower="lower" data-lastid="{{lastid}}">
+      <view class='content'>
+        <view class="item-view">
+          <block wx:for="{{dataArray}}" wx:key="" wx:for-index="index">
+            <template is="item" data="{{...item ,index}}" wx:if="{{index%2==0}}"></template>
+          </block>
+        </view>
+        <view class="item-view">
+          <block wx:for="{{dataArray}}" wx:key="" wx:for-index="index">
+            <template is="item" data="{{...item ,index}}" wx:if="{{index%2==1}}"></template>
+          </block>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>

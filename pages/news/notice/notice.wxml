@@ -1,0 +1,23 @@
+<!--pages/news/notice/notice.wxml-->
+<import src="../public/public.wxml" />
+<nav-bar navbar-data='{{nvabarData}}'></nav-bar>
+<view class='home-page' style='margin-top: {{height}}px'> </view>
+<view class='newsxitiao' style="top:{{height}}px"></view>
+<view class='message_Box' style='height:{{page_height}}px'>
+  <view class='message_Item' wx:for="{{notice_box}}" wx:key="item" bindtap='goto_detail' data-id='{{item.id}}'>
+  <view class='line_block'></view>
+      <view class="notice_icon_box">
+      <image class='notice_icon' src="../../../images/news/notice/tx.png"></image>
+      </view>
+      <view class="notice_content">
+        <view class="notice_content_head">
+        <text wx:if="{{item.home_uaer_name}}" class="notice_title">你关注的博主 “{{item.home_uaer_name}}” 有了新的分享</text>
+        <text wx:if="{{item.article_title}}" class='notice_title'>{{item.article_title}}</text>
+        <text class="notice_date">{{item.create_time}}</text>
+        </view>
+        <view class="notice_content_preview">
+        <image class="notice_content_img" src="{{item.image}}"></image>
+        </view>
+      </view>
+  </view>
+</view>

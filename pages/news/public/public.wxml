@@ -1,0 +1,43 @@
+<template name="postItem">
+
+  <view class='fcolumn'>
+    <view class='fxitiao'></view>
+    <view class='fdxt'></view>
+    <view class='fxitiao'></view>
+
+
+    <view class='whole' wx:for="{{dianzan}}" wx:key="{{key}}" wx:for-item="item">
+      <view class='left'>
+        <image class='imgdxnews yuang' src='{{item.user.avatarUrl}}'></image>
+      </view>
+      <view class='left wholexiao'>
+        <view class='zantid topshier'>{{item.user.nickName}}</view>
+        <view class='yojt topshiwu'>刚刚</view>
+      </view>
+      <view class='right'>
+        <image class='imgdxnews' src='{{item.image}}'></image>
+      </view>
+    </view>
+    <view class='fxitiao'></view>
+
+   
+    <view class='fxitiao'></view>
+    <view class='topm'>
+      <view class='fon'>
+        点击查看更多
+      </view>
+    </view>
+  </view>
+
+
+
+
+
+
+
+
+
+
+
+
+</template>

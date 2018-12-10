@@ -1,0 +1,39 @@
+<!--pages/index/ss/index.wxml-->
+<view class='view-page'>
+  <navbar page-name="内容搜索"></navbar>
+  <view class='page-content' style='height:calc(100vh - {{navH}}px);top:{{navH}}px'>
+    <view class='fhh'>
+      <view class='fss '>
+        <view class='drow hl'>
+          <view>
+            <image class='fimgdx' src='/images/follow/ss.png'></image>
+          </view>
+          <input class='fssrn hl' placeholder='请输入搜索内容'></input>
+        </view>
+      </view>
+    </view>
+
+    <view class='mu drow'>
+      <view class='mu-mu dcolumn'>
+        <view class='mu-tex '>晒晒</view>
+        <image class='mu-img' src='/img/sousuo.png'></image>
+      </view>
+      <view class='mu-mu dcolumn'>
+        <view class='mu-tex '>用户</view>
+        <image class='mu-img' src='/img/sousuo.png'></image>
+      </view>
+      <view class='mu-mu dcolumn'>
+        <view class='mu-tex '>话题</view>
+        <image class='mu-img' src='/img/sousuo.png'></image>
+      </view>
+
+    </view>
+    <view class='erhx'></view>
+
+
+
+
+
+
+  </view>
+</view>

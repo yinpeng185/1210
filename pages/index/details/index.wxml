@@ -1,0 +1,263 @@
+<!--pages/home/details/details.wxml-->
+<import src="../../public/public.wxml" />
+<view class=' kkkkk' wx:if="{{look}}">
+  <view class='dcolumn'>
+    <canvas   canvas-id='myCanvas' hidden='{{cavhide}}' style="margin-top:1500rpx ; width: {{phone_width}}px; height: {{phone_height}}px;" bindlongtap="look" ></canvas>
+    <image src="{{imgurl}}" class='cavimg' hidden='{{imghide}}'  style='height:700rpx;'></image>
+    <image class='fffdd'  bindtap='fffdd' src='/img/f.png' wx:if='{{look}}'></image>
+    <!-- <image  class='bg' src='../../../img/backg.png'style="width: {{phone_width}}px; height: {{phone_height}}px;"></image> -->
+    <!-- <button class='savePicBtn mainColor_bg' bindtap='goHome' wx:if='{{look}}'>返回首页</button> -->
+    <button class='savePicBtn mainColor_bg home' bindtap='savePic' wx:if='{{look}}'>{{ononlo}}</button>
+  </view>
+</view>
+<view class='view-page'>
+  <navbar page-name="{{userId==details.user_id?'我':details.home_uaer_name}}的晒晒"></navbar>
+  <view class='page-content' style='height:calc(100vh - {{navH}}px)'>
+
+    <view class='dcolumn'>
+      <view class='bfb'>
+        <swiper autoplay="true" indicator-dots="true" interval="2000" bindscrolltoupper="listenSwiper" class='bfb' current='{{current_index}}' bindchange='get_index'>
+          <swiper-item wx:for="{{details.image}}" wx:key="index" wx:for-item="img" wx:for-index='imgIndex'>
+            <image class='deimgda' src="{{img}}" />
+          </swiper-item>
+        </swiper>
+        <view class='fximg '>
+          <view class='yshu left'>
+            <view class='fxztdx fshu'>{{current_index+1}}/{{total_index}}</view>
+          </view>
+          <view class='rightt'>
+            <!-- <view class='fxztdx' bindtap='showfx'>分享</view> -->
+          </view>
+          <view class='shirr rightt' bindtap='showfx'>
+            <!-- <image class='fxtbimg' src='/images/hnr/hxq/fxtb.png'></image> -->
+          </view>
+        </view>
+      </view>
+      <!-- HHHHH -->
+      <view class='hh'>
+        <view class='left'>
+          <image class='imgdxnews' catchtap='goto_home' data-id='{{details.user_id}}' src='{{details.r_image}}'></image>
+        </view>
+        <view class='left ty'>
+          <view class='zantid' catchtap='goto_home' data-id='{{details.user_id}}'>{{details.home_uaer_name}}</view>
+          <view class='yojt'>{{details.create_time}}
+          </view>
+        </view>
+        <view class='rightt shi' bindtap='gzon' data-wid="{{details.id}}" data-user_id='{{details.user_id}}'>
+          <view class="{{details.guanInfo?'yiguz':'guz'}}" hidden="{{userId==details.user_id?true:false}}">{{details.guanInfo?'已关注':'关注'}}</view>
+        </view>
+      </view>
+      <!-- HHHH -->
+      <!-- <text class="hss" selectable='true' space='ensp' decode='true' > -->
+      <!-- </text> -->
+      <view class='nuh'>
+        <view class='nuhzt {{isShowAllContent ?"content-all" :"content-breif"}}'>{{details.description}}
+          <text bindtap='jhao' class="hss" wx:key="index" hidden="{{details.at.length==0?true:false}}" wx:for="{{details.at}}" selectable='true' space='ensp' decode='true'>@{{item.nickName}} </text>
+          <text bindtap='asah' class="hss" selectable='true' space='ensp' decode='true' hidden="{{details.jinhao.length==0?true:false}}">#{{item.topic_title}}#</text>
+        </view>
+        <view class='zhk rightt' catchtap='showAllAction' hidden="{{details.description.length>44?false:true}}">
+          {{isShowAllContent?'收起':'展开'}}
+        </view>
+      </view>
+      <!-- HHHH -->
+      <!-- <view class='wz dcolumn'>
+        <view class='erlp'>
+          <view class='ztdax' bindtap='openLocation' data-y='{{details.ypoint}}' data-id='{{details.id}}' data-name='{{details.addressname}}' data-address='{{details.address}}' data-x='{{details.xpoint}}'>{{details.addressname}}</view>
+          <view class='drow tb'>
+            <image class='wzdx' src='/images/hnr/hxq/dw.png'></image>
+            <view class='wssdx ll'>{{details.address}}</view>
+          </view>
+        </view>
+      </view> -->
+
+      <view class='city'>
+        <view class='ztdax' bindtap='openLocation' data-y='{{details.ypoint}}' data-id='{{details.id}}' data-name='{{details.addressname}}' data-address='{{details.address}}' data-x='{{details.xpoint}}'>
+        <image class='wzdx' src='/images/hnr/hxq/city.png'></image>
+        {{details.addressname}}</view>
+      </view>
+
+      <view class='rrqw'>
+        <view class='drow left' bindtap='showfx'> <!-- 分享 -->
+          <image class='zf' src='/img/zf.png'></image>
+          <view class='zf-shu sww'>14</view>
+         </view>   
+        <view class='drow rightt'>
+          <image class='zf sw' src="{{details.hasChange?'/img/zan-img.png':'/img/zan.png'}}" catchtap='onDz' data-zs='{{details.user_praise}}' data-has='{{details.hasChange}}' data-id='{{details.id}}'></image>
+          <view class='zf-shu es'>{{details.user_praise}}</view>
+
+
+          <image class='zf sw' src='/img/pl.png' bindtap='comment' data-userid="{{details.user_id}}" data-shu='{{details.user_comment}}' data-comid="{{details.id}}" hidden="{{details.user_comment==0?true:false}}"></image>
+          <view class='zf-shu es' data-shu='{{details.user_comment}}' hidden="{{details.user_comment==0?true:false}}">{{countpl}}</view>
+
+          <image class='zf sw' src='/img/pl.png' data-comid="{{details.id}}" data-shu='{{}}' hidden="{{details.user_comment==0?false:true}}"></image>
+          <view class='zf-shu es' hidden="{{details.user_comment==0?false:true}}">{{countpl}}</view>
+
+          <image class='zf sw' src="{{details.hasChangesc?'/img/sc-img.png':'/img/sc.png'}}" catchtap="{{'onSc'?'/img/sc.png':'/img/sc-img.png'}}" catchtap='onSc' data-zs='{{details.user_collection}}' data-id='{{details.id}}'></image>
+          <view class='zf-shu'>{{details.user_collection}}</view>
+        </view>
+      </view>
+      <!-- 评论 -->
+      <view class='yt' wx:if="{{plborder}}">
+      <!-- 最新评论 -->
+      <view><image class='photo' src='{{arr[counts].user.avatarUrl}}'></image></view>   
+          <!-- <view class='zantid' catchtap='goto_home' data-id='{{details.user_id}}'>{{details.home_uaer_name}}</view> -->
+        
+        <view class='yt-t er3'><text class='usernamea'>{{arr[counts].user.nickName}}</text>  :  {{arr[counts].reply}}
+        <view class='time'>{{arr[counts].time}}</view></view>
+        
+        <view class='drow eee' hidden="{{details.user_comment==0?true:false}}">
+
+      <!-- 最新评论结束 -->
+          <view class='yt-ck' bindtap='comment' data-comid="{{details.id}}" data-shu='{{details.user_comment}}' data-userid="{{details.user_id}}">查看所有评论</view>
+          <image class='nskk' src='/img/ck.png'></image>
+        </view>
+      </view>
+      <!-- 评论结束 -->
+
+      <!-- <form report-submit='true' bindsubmit='send_form'>
+        <view class='hye'>
+          <view class='left er'>
+            <image class='tttxxxdx' src='{{avatarUrl}}'></image>
+          </view>
+          <view class='kkkssjl rightt drow'>
+            <view class='klxxnd'>
+              <view class='xxxlc'>
+                <input class='hue' bindinput='get_value' placeholder='快来写下你的评论吧' value='{{reply_content}}' data-id="{{details.id}}"></input>
+              </view>
+            </view>
+            <button class='button' hover-class="none" form-type='submit'>发送</button>
+          </view>
+        </view>
+      </form> -->
+
+      <form report-submit='true' bindsubmit='send_form'>
+        <view class='drow hye'>
+          <view class='er'>
+            <image class='tttxxxdx' src='{{avatarUrl}}'></image>
+          </view>
+          <view class='over'>
+          <textarea class='klxxnd' auto-height bindinput='get_value' value='{{reply_content}}' data-id="{{details.id}}"></textarea>
+          <text class='pla' wx:if="{{pla}}">快来写下你的评论吧</text>
+          </view>
+          <button class='button' hover-class="none" form-type='submit'>发送</button>
+        </view>
+      </form>
+
+      <view hidden='{{huuID==111}}'>
+        <view class='xxiao'></view>
+        <view class='xg'>相关推荐</view>
+        <scroll-view scroll-y="true" style='background-color: #f1f4f6' bindscrolltolower="lower" data-lastid="{{lastid}}">
+          <view class='content'>
+            <view class="item-view">
+              <block wx:for="{{dataArray}}" wx:key="" wx:for-index="index">
+                <template is="item" data="{{...item ,index, buxianshi}}" wx:if="{{index%2==0}}"></template>
+              </block>
+            </view>
+            <view class="item-view">
+              <block wx:for="{{dataArray}}" wx:key="" wx:for-index="index">
+                <template is="item" data="{{...item ,index, buxianshi}}" wx:if="{{index%2==1}}"></template>
+              </block>
+            </view>
+          </view>
+        </scroll-view>
+      </view>
+
+
+      <!-- HHH -->
+      <view class='defx' wx:if="{{show_fenxiang}}">
+
+        <view class='defxjd'>
+          <view class='deziti'>
+            分享到
+          </view>
+          <view class='drow dezimg'>
+            <view class='ss'>
+              <button class='buttonn' hover-class="none" open-type="share" bindtap='share_open'>
+                <image class='imdedx' src='/images/hnr/hxq/wxdup.png'></image>
+              </button>
+              <view class='imgzitt'>微信好友</view>
+            </view>
+            <view class='ss'>
+              <button class='buttonn' bindtap='share'>
+                <image class='imdedx' src='/images/hnr/hxq/hb.png' bindtap='share'></image>
+              </button>
+              <view class='imgzit'>生成海报</view>
+            </view>
+            <!-- <view class='ss'>
+              <button class='buttonn' bindtap='chshare'>
+                <image class='imdedx' src='/images/hnr/hxq/ct.png'></image>
+              </button>
+              <view class='imgzit'>生成长图</view>
+            </view> -->
+            <view class='ss' hidden='{{huuID==111?true:false}}'>
+              <button class='buttonn' bindtap='reportTop'>
+                <image class='imdedx' src='/images/hnr/hxq/ts.png'></image>
+              </button>
+              <view class='imgzit'>举报</view>
+            </view>
+            <view class='ss' hidden='{{huuID==111?false:true}}'>
+              <button class='buttonn' bindtap='shanchu'>
+                <image class='imdedx' src='/img/woshchu.png'></image>
+              </button>
+              <view class='imgzit'>删除</view>
+            </view>
+          </view>
+          <view class='quxtop'>
+            <view class='plxt'></view>
+            <view class='qux' bindtap='showfxqx'>
+              取消
+            </view>
+          </view>
+          <!-- <button class='buttonn' hover-class="none">
+            <image class='imdedx' src='/images/hnr/hxq/wxdup.png'></image>
+          </button> -->
+
+        </view>
+
+
+
+
+      </view>
+
+      <!-- <view class='defx'>
+        <view class='defxjd'>
+          <button class='button' hover-class="none">发送</button>
+        </view>
+
+
+      </view> -->
+
+
+
+      <!-- HHH -->
+    </view>
+    <!-- 提示 -->
+    <view class='da' wx:if="{{tur}}">
+      <view class='yngdan'>
+        <view class='sss'>
+          <view class='sld'>发布成功</view>
+          <view class='drow' catchtap='onG'>
+            <image class='imgx' catchtap='onG' src='/images/hnr/hxq/xxx.png'></image>
+          </view>
+        </view>
+        <view class='erp'></view>
+        <view class='ser'>分享更多的人看到(^o^)</view>
+        <image class='imgd' src='/images/hnr/hxq/ddd.png'></image>
+        <view class='qqerp'></view>
+        <view class='drow'>
+          <view class='qx' catchtap='onG'>取消</view>
+          <view class='hhx'></view>
+          <view class='fx' bindtap='showfx'>去分享</view>
+        </view>
+      </view>
+    </view>
+
+
+
+
+
+
+
+
+  </view>
+</view>

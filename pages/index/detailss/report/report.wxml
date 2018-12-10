@@ -1,0 +1,55 @@
+<!--pages/my/setup/report/report.wxml-->
+<view class='view-page'>
+  <navbar page-name="举报"></navbar>
+  <view class='page-content' style='height:calc(100vh - {{navH}}px)'>
+    <!--这里放你的内容-->
+    <view class='infoxitiao'></view>
+    <view class='infodxt'></view>
+    <view class='infoxitiao'></view>
+    <view class='wholle'>
+      <view class='weer'>
+        <view class='erl left'>垃圾营销</view>
+        <image class='imgxz right' src='/images/my/sex/sex.png'></image>
+      </view>
+      <view class='infoxitiao'></view>
+    </view>
+    <view class='wholle'>
+      <view class='weer'>
+        <view class='erl left'>淫秽色情</view>
+        <image class='imgxz right' src='/images/my/sex/sex.png'></image>
+      </view>
+      <view class='infoxitiao'></view>
+    </view>
+    <view class='wholle'>
+      <view class='weer'>
+        <view class='erl left'>人身攻击</view>
+        <image class='imgxz right' src='/images/my/sex/sex.png'></image>
+      </view>
+      <view class='infoxitiao'></view>
+    </view>
+    <view class='wholle'>
+      <view class='weer'>
+        <view class='erl left'>有害信息</view>
+        <image class='imgxz right' src='/images/my/sex/sex.png'></image>
+      </view>
+      <view class='infoxitiao'></view>
+    </view>
+    <view class='wholle'>
+      <view class='weer'>
+        <view class='erl left'>违法违规</view>
+        <image class='imgxz right' src='/images/my/sex/sex.png'></image>
+      </view>
+      <view class='infoxitiao'></view>
+    </view>
+    <view class='wholle'>
+      <view class='weer'>
+        <view class='erl left'>其他</view>
+        <image class='imgxz right' src='/images/my/sex/sex.png'></image>
+      </view>
+      <view class='infoxitiao'></view>
+    </view>
+    <view class='wheol'>
+      提交
+    </view>
+  </view>
+</view>

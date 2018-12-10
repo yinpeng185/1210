@@ -1,0 +1,269 @@
+/* pages/eehome/eehome.wxss */
+
+page {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.view-page {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+  position: absolute;
+  overflow: hidden;
+  /* bottom: 10%; */
+  background-color: #f1f4f6;
+}
+
+.page-content {
+  box-sizing: border-box;
+  position: relative;
+  overflow-y: auto;
+}
+@import "../public/public.wxss";
+
+.fcolumnntainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.frowcontainer {
+  display: flex;
+  flex-direction: row;
+}
+
+/* 内容 */
+
+.content {
+  margin: 0 1%;
+  overflow: hidden;
+  padding-bottom: 28%;
+}
+
+.item-view {
+  width: 50%;
+  float: left;
+  /* background-color: red */
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+/* 内容 */
+
+/* 搜索 */
+
+.fhh {
+  height: 60rpx;
+  width: 100%;
+  /* 
+  position: absolute;
+  top: 10;
+  left: 0; */
+  padding-bottom: 20rpx;
+  background-color: #fff;
+}
+
+.fss {
+  width: 690rpx;
+  height: 60rpx;
+  background-color: #f4f4f4;
+  border: 0px solid #f2f2f2f2;
+  border-radius: 32rpx;
+  margin: 0 30rpx;
+}
+
+.hl {
+  height: 60rpx;
+  line-height: 60rpx;
+}
+
+.fssrn {
+  font-size: 29rpx;
+  color: #999;
+  padding-left: 15rpx;
+}
+
+.fimgdx {
+  width: 27rpx;
+  height: 27rpx;
+  padding-left: 20rpx;
+}
+
+/* 搜索 */
+
+/* 选项卡 */
+
+.scroll-lan {
+  width: 100%;
+  height: 55rpx;
+  margin-top: 30rpx;
+}
+
+.scroll-view_H {
+  width: 100%;
+  white-space: nowrap;
+}
+
+.lantext {
+  font-size: 30rpx;
+  color: #333;
+  padding-left: 40rpx;
+  padding-right: 40rpx;
+  height: 55rpx;
+  line-height: 55rpx;
+  /* background-color: red; */
+}
+
+.lantextss {
+  font-size: 30rpx;
+  color: #333;
+  height: 55rpx;
+  line-height: 55rpx;
+  /* background-color: red; */
+}
+
+.hccontainer {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ::-webkit-scrollbar {
+  width: 100%;
+  height: 10;
+  color: transparent;
+} */
+
+.active {
+  color: #333;
+  font-weight: bold;
+}
+
+/* 选项卡 */
+
+.swiper-tab {
+  width: 100%;
+  border-bottom: 2rpx solid #777;
+  text-align: center;
+  line-height: 80rpx;
+}
+
+.swiper-tab-list {
+  font-size: 30rpx;
+  display: inline-block;
+  width: 33.33%;
+  color: #777;
+}
+
+.on {
+  color: #da7c0c;
+  border-bottom: 5rpx solid #da7c0c;
+}
+
+.swiper-box {
+  display: block;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.swiper-box view {
+  text-align: center;
+}
+
+.lantext {
+  font-size: 32rpx;
+  color: #333;
+  height: 55rpx;
+  line-height: 55rpx;
+}
+
+.top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 50rpx;
+  width: 100%;
+  background: white;
+  text-align: center;
+  z-index: 5;
+  /* border: 1px solid red; */
+}
+
+.recom {
+  border-bottom: 10rpx solid #da7c0c;
+  font-size: 34rpx;
+  font-weight: bold;
+  width: 4%;
+}
+
+.recom2 {
+  margin: 0 8rpx;
+}
+
+.dsh-tup {
+  width: 220rpx;
+  height: 55rpx;
+}
+
+.dsh {
+  width: 220rpx;
+  height: 55rpx;
+  position: absolute;
+  top: -0.5%;
+  right: 0;
+  margin-right: 40px;
+  z-index: 10;
+}
+
+.dsh-te {
+  font-size: 10px;
+  color: #fff;
+  margin-top: -21.8%;
+  text-align: center;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+/* 登录 */
+
+.dlu {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.erww {
+  width: 250rpx;
+  height: 250rpx;
+}
+
+
+
+.button {
+  display: block;
+  padding: 0rpx;
+  margin: 0rpx;
+  background-color: rgba(000, 000, 000, 0.9);
+  border: none;
+  border-radius: 50%;
+  width: 250rpx;
+  height: 250rpx;
+  margin-left: 35%;
+  margin-bottom: 170rpx;
+  position: fixed;
+  bottom: 0;
+}
+
+button[class="button"]:after {
+  border: 0;
+  border-radius: 0;
+}
