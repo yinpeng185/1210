@@ -1,0 +1,467 @@
+/**index.wxss**/
+
+.mycolumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.myrow {
+  display: flex;
+  flex-direction: row;
+}
+
+.topxt {
+  width: 100%;
+  height: 1rpx;
+  border: 0rpx solid #ccc;
+  background-color: #ccc;
+}
+
+button {
+  display: inline-block;
+  padding: 0rpx;
+  margin: 0rpx;
+  background-color: #fff;
+  border: none;
+  border-radius: 0;
+}
+
+.dade {
+  margin-left: 30rpx;
+  /* h */
+  margin-top: 20rpx;
+  height: auto;
+  width: auto;
+  /* background-color: red; */
+}
+
+.jb {
+  background-color: #f0b718;
+  width: 54rpx;
+  height: 28rpx;
+  line-height: 28rpx;
+  text-align: center;
+  border: 0rpx solid #666;
+  border-radius: 14rpx;
+  font-size: 20rpx;
+  color: #fff;
+}
+
+.dd {
+  font-size: 24rpx;
+  color: #999;
+}
+
+.topll {
+  margin-top: 20rpx;
+  margin-left: 32rpx;
+}
+
+.jbjl {
+  position: relative;
+  top: -36rpx;
+  left: 54rpx;
+}
+
+.txdx {
+  height: 190rpx;
+  width: 190rpx;
+  border-radius: 50%;
+}
+
+.imgdx {
+  margin-top: 10rpx;
+  height: 190rpx;
+  width: 190rpx;
+  border-radius: 50%;
+}
+
+.nrdx {
+  margin-top: 15rpx;
+  /* h */
+  margin-left: 100rpx;
+  /* background-color: rebeccapurple; */
+}
+
+.zgf {
+  /* padding-left: 50rpx; */
+}
+
+.zs {
+  font-size: 32rpx;
+  color: #333;
+  /* padding-left: 14rpx; */
+}
+
+.zz {
+  font-size: 24rpx;
+  color: #666;
+  padding-top: 6rpx;
+}
+
+.hh {
+  text-align: center;
+}
+
+.jl {
+  padding-left: 110rpx;
+}
+
+.bjzl {
+  /* padding-left: 30rpx; *//* padding-top: 53rpx; *//* background-color: rebeccapurple; *//* width: 400rpx;
+  height: 52rpx; */
+}
+
+.nrzt {
+  background-color: #fff;
+  width: 320rpx;
+  height: 52rpx;
+  line-height: 52rpx;
+  text-align: center;
+  border: 2rpx solid #666;
+  border-radius: 28rpx;
+  font-size: 26rpx;
+  color: #666;
+}
+
+.nimg {
+  background-color: #fff;
+  width: 66rpx;
+  height: 52rpx;
+  line-height: 52rpx;
+  text-align: center;
+  border: 2rpx solid #666;
+  border-radius: 28rpx;
+  font-size: 26rpx;
+  color: #666;
+  margin-left: 15rpx;
+}
+
+.mcnr {
+  /* background-color: rosybrown; */
+  margin-left: 32rpx;
+  margin-top: 60rpx;
+}
+
+.fff {
+  height: 66rpx;
+  /* background-color: red; */
+  margin-top: 53rpx;
+}
+
+.mcdxs {
+  font-size: 48rpx;
+  color: #666;
+  font-weight: bold;
+}
+
+.iml {
+  padding-left: 30rpx;
+  padding-top: 14rpx;
+}
+
+.imgxb {
+  width: 31rpx;
+  height: 31rpx;
+}
+
+.ztl {
+  padding-left: 20rpx;
+  padding-top: 18rpx;
+}
+
+.chshi {
+  background-color: #fff;
+  width: 70rpx;
+  height: 35rpx;
+  line-height: 35rpx;
+  text-align: center;
+  border: 1rpx solid #999;
+  border-radius: 19.5rpx;
+  font-size: 20rpx;
+  color: #999;
+}
+
+.qbao {
+  background-color: #fff;
+  width: 113rpx;
+  height: 35rpx;
+  line-height: 35rpx;
+  text-align: center;
+  border: 1rpx solid #e4007f;
+  border-radius: 19.5rpx;
+  font-size: 20rpx;
+  color: #e4007f;
+}
+
+.juh {
+  padding-top: 3.5rpx;
+  padding-left: 15rpx;
+  padding-right: 5rpx;
+}
+
+.hues {
+  padding-left: 6rpx;
+  /* padding-top: 1.6rpx; */
+}
+
+.qbimgdx {
+  width: 26rpx;
+  height: 20rpx;
+}
+
+.jtimgdx {
+  width: 10rpx;
+  height: 16rpx;
+}
+
+.topp {
+  margin-top: 30rpx;
+}
+
+.juli {
+  padding-left: 30rpx;
+  padding-top: 10rpx;
+}
+
+.fxzt {
+  font-size: 32rpx;
+  /* color: #e4007f; */
+  padding-left: 100rpx;
+}
+
+.xdtop {
+  padding-top: 10rpx;
+}
+
+.hxx {
+  height: 4rpx;
+  width: 315rpx;
+  /* background-color: #e4007f; */
+}
+
+.sjl {
+  padding-left: 30rpx;
+}
+
+.shux {
+  width: 1rpx;
+  height: 50rpx;
+  background-color: #ccc;
+}
+
+/* 我的晒晒 */
+
+.sjsj {
+  float: left;
+  margin-top: 5rpx;
+  margin-left: 10rpx;
+}
+
+.imgfss {
+  padding-top: 5rpx;
+  width: 360rpx;
+  height: 480rpx;
+}
+
+.imgfs {
+  width: 360rpx;
+  height: 480rpx;
+}
+
+.didd {
+  width: 60rpx;
+  height: 35rpx;
+  /* background-color: rebeccapurple; */
+  left: 20rpx;
+  position: relative;
+  top: -70rpx;
+}
+
+.zdz {
+  font-size: 36rpx;
+  color: #fff;
+  left: 40rpx;
+  position: relative;
+  top: -70rpx;
+}
+
+.ewm {
+  width: 28rpx;
+  height: 28rpx;
+  margin-top: 12rpx;
+}
+
+.rr {
+  float: right;
+}
+
+.ll {
+  float: left;
+}
+
+/* .lrjl{
+  margin-top: 10rpx;
+} */
+
+/* .right {
+  display: block;
+  float: right;
+} */
+
+/* .userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+} */
+
+.active {
+  color: #e4007f;
+}
+
+.activey {
+  background-color: #e4007f;
+}
+
+.myshchu {
+  width: 32rpx;
+  height: 32rpx;
+  /* background-color: red; */
+  left:65%;
+  position: relative;
+  top: -70rpx;
+}
+
+
+
+
+
+/* @import "/css/color/color.wxss"; */
+
+page {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.view-page {
+  /* display: none; */
+  width: 100%;
+  height: 100%;
+  /* margin: 10%; */
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+  position: absolute;
+  overflow: auto;
+  z-index: 10;
+  padding: 20% 0 0 20%  ;
+  background: rgba(000, 000, 000, .8)
+}
+
+.page-content {
+  box-sizing: border-box;
+  position: relative;
+  overflow-y: auto;
+}
+
+.imgtu {
+  width: 700rpx;
+  height: 1000rpx;
+  margin-left: 25rpx;
+  margin-right: 25rpx;
+  margin-top: 25rpx;
+}
+
+.dcolumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.drow {
+  display: flex;
+  flex-direction: row;
+}
+
+.topPic {
+  width: 100%;
+}
+
+.savePicBtn {
+  position: fixed;
+  bottom: 5%;
+  left: 27%;
+  color: #69c;
+  line-height: 60rpx;
+  font-size: 32rpx;
+  height: 60rpx;
+  width: 320rpx;
+  border-radius: 30rpx;
+  z-index: 2;
+}
+.fffdd{
+  width: 34rpx;
+  height: 34rpx;
+  z-index: 10;
+  /* background: white; */
+  position: fixed;
+  top: 18%;
+  right: 10%;
+
+}
+
+.savePicBtn::after {
+  width: 0;
+  height: 0;
+}
+
+.mainColor_bg {
+  background: #eee;
+}
+
+.home {
+  background: #e4007f;
+  color: #fff;
+  right: 0;
+}
+
+.bgcolor {
+  background: #69c;
+}
+
+.load {
+  padding-top: 40%;
+  line-height: 24px;
+}
+
+.cavimg {
+  width: 80%;
+  height: 80%;
+  z-index: 2;
+  /* opacity: 0.7; */
+}
+
+/**
+ var(--mColor)
+ */
+
+.canvas {
+  background-color: var(--mColor);
+  /* background-color: transparent; */
+}

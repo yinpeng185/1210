@@ -1,0 +1,127 @@
+<nav-bar navbar-data='{{nvabarData}}'></nav-bar>
+<view class='home-page' style='margin-top: {{height}}px'>
+</view>
+<!--index.wxml-->
+<view class='view-page' wx:if="{{look}}">
+  <view class='dcolumn'>
+    <canvas   canvas-id='myCanvas' hidden='{{cavhide}}' style="margin-top:1500rpx;width: {{phone_width}}px; height: {{phone_height}}px;" ></canvas>
+    <image src="{{imgurl}}" class='cavimg' hidden='{{imghide}}' mode='widthFix'></image>
+    <image class='fffdd'  bindtap='fffdd' src='/img/f.png' wx:if='{{look}}'></image>
+    <!-- <image  class='bg' src='../../../img/backg.png'style="width: {{phone_width}}px; height: {{phone_height}}px;"></image> -->
+    <!-- <button class='savePicBtn mainColor_bg' bindtap='goHome' wx:if='{{look}}'>返回首页</button> -->
+    <button class='savePicBtn mainColor_bg home' bindtap='savePic' wx:if='{{look}}'>{{ononlo}}</button>
+  </view>
+</view>
+
+<view class='mycolumn'>
+  <view class='topxt'></view>
+  <view class='dade myrow'>
+    <!-- <button class='imgdx' lang="zh_CN" open-type="getUserInfo" bindgetuserinfo="onGotUserInfo" wx:if="{{ && canIUse}}">
+      <image class='txdx' src='/images/my/tx.png'></image>
+    </button> -->
+    <button class='imgdx' lang="zh_CN" open-type="getUserInfo" bindgetuserinfo="onGotUserInfo" wx:if="{{!userInfo.avatarUrl && canIUse}}">
+      <image class='txdx' src='/images/icon/logo.png'></image>
+    </button>
+
+    <view class='imgdx' bindtap='previewImage' data-src="{{userInfo.avatarUrl}}" wx:if="{{userInfo.avatarUrl}}">
+      <image class='txdx' src='{{userInfo.avatarUrl}}'></image>
+
+    </view>
+    <view class='mycolumn nrdx'>
+      <view class='myrow zgf'>
+        <view class='mycolumn hh'>
+          <view class='zs'>{{userInfo.user_praise}}</view>
+          <view class='zz'>获赞</view>
+        </view>
+        <view class='mycolumn jl hh' catchtap='gzfans'>
+          <view class='zs'>{{userInfo.user_follow}}</view>
+          <view class='zz'>关注</view>
+        </view>
+        <view class='mycolumn jl hh' catchtap='fsfans'>
+          <view class='zs'>{{userInfo.user_fans}}</view>
+          <view class='zz'>粉丝</view>
+        </view>
+      </view>
+      <view class='myrow  fff'>
+        <view class='bjzl' bindtap='bjTop'>
+          <view class='nrzt'>编辑个人资料</view>
+        </view>
+        <view class='nimg' bindtap='share'>
+          <image class='ewm' src='/images/icon/ewm.png'></image>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='mcnr'>
+    <view class='myrow'>
+      <text class='mcdxs ll' bindtap='chNameTop'>{{userInfo.nickName}}</text>
+      <view class='myrow rr'>
+        <view class='iml'>
+          <image class='imgxb' src='/images/my/xb.png' wx:if="{{userInfo.gender == 2}}"></image>
+          <image class='imgxb' src='/images/my/nx.png' wx:if="{{userInfo.gender == 1}}"></image>
+        </view>
+        <view class='ztl'>
+          <view class='chshi'>{{userInfo.city==''?'未设置':userInfo.city}}</view>
+        </view>
+        <view class='ztl' bindtap='qqboTop'>
+          <view class='qbao myrow' hidden="{{setting.tx_kg ==1? flase: true}}">
+            <view class='juh'>
+              <image class='qbimgdx' src='/images/my/qb.png'></image>
+            </view>
+            钱包
+            <view class='hues'>
+              <image class='jtimgdx' src='/images/my/jt.png'></image>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='topll' bindtap='gxqmTop'>
+    <view class='dd'>{{userInfo.autograph_name==''? '点此设置你的个性签名' : userInfo.autograph_name }}</view>
+  </view>
+
+  <view class='myrow topp'>
+    <view class='mycolumn juli' data-index="0" catchtap='navbarTap'>
+      <view class="fxzt {{hh==0?'active':''}}">我的晒晒</view>
+      <view class='xdtop'>
+        <view class="hxx {{hh==0?'activey':''}}"></view>
+      </view>
+    </view>
+
+    <view class='sjl'>
+      <view class='shux'></view>
+    </view>
+
+    <view class='mycolumn juli' data-index="1" catchtap='navbarTap'>
+      <view class="fxzt {{hh==1?'active':''}}">我的收藏</view>
+      <view class='xdtop'>
+        <view class="hxx {{hh==1?'activey':''}}"></view>
+      </view>
+    </view>
+  </view>
+
+
+
+  <view hidden="{{hh==1}}">
+    <view class='sjsj' wx:for="{{shaishai}}" wx:key="item" id="{{item.id}}" bindtap='godetailInfo1'>
+      <view class='imgfss'>
+        <image class='imgfs' src='{{item.image[0]}}'></image>
+        <image class='didd' hidden='{{zjid==item.user_id?false:true}}' src='/images/my/dz.png'></image>
+        <text class='zdz' hidden='{{zjid==item.user_id?false:true}}'>{{item.user_praise}}</text>
+        <image class='myshchu' catchtap='myshsh' data-id='{{item.id}}' src='/img/myshch.png'></image>
+      </view>
+    </view>
+  </view>
+
+  <view hidden="{{hh==0}}">
+    <view class='sjsj' wx:for="{{shoucang}}" wx:key="item" id='{{item.id}}' bindtap='godetailInfo2'>
+      <view class='imgfss'>
+        <image class='imgfs' src='{{item.image}}'></image>
+        <image class='didd' hidden='{{zjid==item.user_id?true:false}}' src='/images/my/dz.png'></image>
+        <text class='zdz' hidden='{{zjid==item.user_id?true:false}}'>{{item.user_praise}}</text>
+        <image class='myshchu' catchtap='myshch'data-zs='{{item.user_collection}}' data-id='{{item.id}}' src='/img/myshch.png'></image>
+      </view>
+    </view>
+  </view>
+</view>
