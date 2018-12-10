@@ -1,0 +1,45 @@
+/**
+这里放你的所有图标的代码
+在阿里巴巴矢量库，选择 Unicode 模式，下载解压后的iconfont.css里面的代码，下面有截图可供参考
+**/
+/* .ss-icon__info {
+  color: #fff;
+  left: 100%;
+  top: -.5em;
+  font-size: 0.5em;
+  padding: 0 0.3em;
+  text-align: center;
+  min-width: 1.2em;
+  line-height: 1.2;
+  position: absolute;
+  border-radius: 0.6em;
+  box-sizing: border-box;
+  background-color: #f44;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  font-family: PingFang SC, Helvetica Neue, Arial, sans-serif;
+} */
+
+
+@font-face {font-family: "ss-font";
+  src: url('iconfont.eot?t=1541682037041'); /* IE9*/
+  src: url('iconfont.eot?t=1541682037041#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff;charset=utf-8;base64,d09GRgABAAAAAATIAAsAAAAAByAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABHU1VCAAABCAAAADMAAABCsP6z7U9TLzIAAAE8AAAARAAAAFY8dkjiY21hcAAAAYAAAABbAAABnLQxHPxnbHlmAAAB3AAAAOMAAADwRk7VZ2hlYWQAAALAAAAAMQAAADYTM+zoaGhlYQAAAvQAAAAeAAAAJAffA4RobXR4AAADFAAAABAAAAAQEAD//2xvY2EAAAMkAAAACgAAAAoAkABAbWF4cAAAAzAAAAAfAAAAIAEPAC9uYW1lAAADUAAAAUgAAAJhY2xE4XBvc3QAAASYAAAALwAAAEBRQrW2eJxjYGRgYOBikGPQYWB0cfMJYeBgYGGAAJAMY05meiJQDMoDyrGAaQ4gZoOIAgCKIwNPAHicY2BkYWCcwMDKwMHUyXSGgYGhH0IzvmYwYuRgYGBiYGVmwAoC0lxTGByeMTx7z9zwv4EhhrmRoQEozAiSAwDu7QzTeJztkLENgDAMBM8xoAgxCiViIComd5sRgu1QMARvneV/fWVgBtTZnQnkRghdnkrmypr5xOm++hQwrFjr/XulJBs1L42mLPzach+v0/jaIH5sZZB5G1AezbwU7gB4nCWPwUrDQBRF353RTENnYqPNZFKwNE9IwI0hphUsRnChuHDvP3TlH8SP6ocI6k904Uq6UCYGhMNdHS4cAlHfiUR2NCY6jJtVbZN4GnCBnT7WAxv5GWod/p4PS0T//s/gnxCFwkbgEmXRXKHFXARi5x+x1chy4y9gND5G1k0CJRv/5B9Mnmm8S31m8DZSwcRZQt/33QHkK/FwXrBChDluEU/tGssWa9T2FJf1ahnbFkUprrMb5+8M0kWkKv4Cpy+Ov7k6ylOh5SZJ/LNezMRY+Xuu9o7Z7SvG1mDGQ+EfNrgssgB4nGNgZGBgAOLT00pfxfPbfGXgZmEAgRtcIaUw+v///w0sjMyNQC4HAxNIFABQ4QvXAAAAeJxjYGRgYG7438AQw8LwHwhYGBmAIiiABQCgwwZqAAAEAAAABAAAAAQAAAAEAP//AAAAAAAYAEAAeAAAeJxjYGRgYGBhUGYA0QwMTEDMBYQMDP/BfAYADDgBPwB4nF2RvU7DMBSFT/orUokBBBODJSSGoqY/Y8VWqd07dGNoU6dNlcSR41bqyPPwBDwBT8DKwlOwcZpekEgsX3/33HMdxwFwhU94OD83nGf20GZ25hr5TrhOvhdukLvCTXQwFG5RfxL28YiJcAfXyLiD17hg1sWLsIdLvArXyG/CdfK7cIP8IdzELb6EW9S/hX0svLZwBw/esz+xeun0Wq2OKg5NFpnM+UXRO61zvdknSyuZLAtti9hkahgMRJnpTNvfPYrDZuRcpCJrUjVlVSeJUbk1Ox26YOtcPu73I9GD0KQ80gQWGks4xjUUVjgyxghheBlRGR19BUfvL5/TvcEeCTttpfY/W9B5csRlrvgTAgwqnhk9WemrnqPAge8ZUXV0K07LnpQ0lV7NMyRkhbys7aiE1ANsy64cY/Q5ooo/KL8w/QFdP2qxeJxjYGKAAC4G7ICFkYmRmZGFkZWBIyM1L70iMzGPuao0nzUzLyW1goEBAFT5BvsA') format('woff'),
+  url('iconfont.ttf?t=1541682037041') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1541682037041#ss-font') format('svg'); /* iOS 4.1- */
+}
+
+.ss-font {
+  font-family:"ss-font" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ss-icon-hengxian:before { content: "\e600"; }
+
+.ss-icon-zuo:before { content: "\e6ef"; }
+
+.ss-icon-index:before { content: "\e602"; }
+
