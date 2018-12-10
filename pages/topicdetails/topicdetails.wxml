@@ -1,0 +1,48 @@
+<!--pages/topicdetails/topicdetails.wxml-->
+<import src="../public/public.wxml" />
+<view class='view-page'>
+  <navbar page-name="什么话题"></navbar>
+  <view class='page-content' style='height:calc(100vh - {{navH}}px);top:{{navH}}px'>
+    <view class='infoxitiao bd' style='top:{{navH}}px'></view>
+    <view class='f4'></view>
+    <view class='infocolumn'>
+      <image class='hbj' src='/img/hbj.png'></image>
+      <image class='htp sst' src='/img/htp.png'></image>
+      <view class='ddd'>
+        <view class='sif'>#MH杭州美食</view>
+        <view class='es ssi'>阅读1500</view>
+        <view class='es wu'>15篇晒晒</view>
+      </view>
+
+      <view class='inforow eb'>
+        <view class='infocolumn'>
+          <view class='sss'>最新</view>
+          <view class='xt'></view>
+        </view>
+        <view class='infocolumn qq'>
+          <view class='sss'>最热</view>
+          <view class='xt'></view>
+        </view>
+      </view>
+      <view class='ershs'></view>
+      <scroll-view scroll-y="true" style="height:100%" bindscrolltolower="lower" data-lastid="{{lastid}}">
+        <view class='content'>
+          <view class="item-view">
+            <block wx:for="{{dataArray}}" wx:key="" wx:for-index="index">
+              <template is="item" data="{{...item ,index}}" wx:if="{{index%2==0}}"></template>
+            </block>
+          </view>
+          <view class="item-view">
+            <block wx:for="{{dataArray}}" wx:key="" wx:for-index="index">
+              <template is="item" data="{{...item ,index}}" wx:if="{{index%2==1}}"></template>
+            </block>
+          </view>
+        </view>
+      </scroll-view>
+
+
+
+
+    </view>
+  </view>
+</view>

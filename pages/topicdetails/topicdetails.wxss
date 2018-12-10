@@ -1,0 +1,138 @@
+/* pages/topicdetails/topicdetails.wxss */
+
+page {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.view-page {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+  position: absolute;
+  overflow: hidden;
+}
+
+.page-content {
+  box-sizing: border-box;
+  position: relative;
+  overflow-y: auto;
+}
+
+.bd {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+.infocolumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.inforow {
+  display: flex;
+  flex-direction: row;
+}
+
+.f4 {
+  width: 100%;
+  height: 4rpx;
+  background-color: #f1f4f6;
+}
+
+.infoxitiao {
+  height: 1rpx;
+  background-color: #ccc;
+  width: 100%;
+}
+
+.hbj {
+  height: 220rpx;
+  width: 100%;
+}
+
+.htp {
+  height: 140rpx;
+  width: 140rpx;
+}
+
+.sif {
+  font-size: 40rpx;
+  color: #fff;
+}
+
+.es {
+  font-size: 24rpx;
+  color: #fff;
+}
+
+.sss {
+  font-size: 30rpx;
+  color: #333;
+}
+
+.sst {
+  position: absolute;
+  top: 59rpx;
+  left: 25rpx;
+}
+
+.ddd {
+  position: absolute;
+  top: 60rpx;
+  left: 190rpx;
+}
+
+.ssi {
+  margin-top: 20rpx;
+}
+
+.wu {
+  margin-top: 5rpx;
+}
+
+.qq {
+  margin-left: 70rpx;
+}
+
+.eb {
+  margin-left: 282rpx;
+  margin-top: 20rpx;
+}
+
+.xt {
+  height: 5rpx;
+  background-color: #e4007f;
+  width: 62rpx;
+  margin-top: 10rpx;
+}
+
+.ershs{
+  width: 100%;
+  height: 20rpx;
+  background-color: #f1f4f6;
+  margin-top: 20rpx;
+}
+
+@import "../public/public.wxss";
+/* 内容 */
+.content {
+  margin: 0 1%;
+}
+
+.item-view {
+  width: 50%;
+  float: left;
+  /* background-color: royalblue */
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+/* 内容 */

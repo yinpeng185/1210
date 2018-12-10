@@ -1,0 +1,18 @@
+<template name="item" style='margin-top:{{height + lanheight-5}}px;'>
+  <view class='item' data-id='{{id}}' data-indexx="{{index}}" catchtap='onXq' hidden='{{buxianshi==id}}' >
+    <image class="image" src="{{image}}" data-src="{{image}}" mode="widthFix"></image>
+    <view class='time-text'>{{description}}</view>
+    <view class='rowvi'>
+      <view class='row left lsh'>
+        <image class='time-imgwusi' catchtap='goto_home' data-id='{{user_id}}' src='{{r_image}}'></image>
+        <text class='time-text-tr' catchtap='goto_home' data-id='{{user_id}}'>{{home_uaer_name}}</text>
+      </view>
+      <view class='row rsh rightt' catchtap="onPostTap" data-dzid="{{id}}" data-indexx="{{index}}">
+        <image class='time-shij' src='/img/nrdz-im.png' wx:if="{{hasChange}}" ></image>
+        <image class='time-shij' src='/img/nrdz.png' wx:else ></image>
+
+        <view class='time-shu'>{{user_praise}}</view>
+      </view>
+    </view>
+  </view>
+</template>
