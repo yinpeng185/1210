@@ -1,0 +1,19 @@
+<nav-bar navbar-data='{{nvabarData}}'></nav-bar>
+<view class='home-page' style='margin-top: {{height}}px'>
+<view class='infoxitiao'></view>
+<view class='infodxt'></view>
+
+<view class='infoxitiao'></view>
+<view class='wheoe infocolumn' wx:for="{{txInfo}}" wx:key="key" wx:for-item='item'>
+  <view class='wher'>
+    <view class='shytxt left'>收益提现</view>
+    <view class='qbbz right'>
+      <view class='qhaoq'>{{item.money}}
+        <text>¥</text>
+      </view>
+    </view>
+  </view>
+  <view class='shjtxt'>{{item.tx_time}}</view>
+</view>
+
+</view>

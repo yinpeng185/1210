@@ -1,0 +1,104 @@
+/* @import "/css/color/color.wxss"; */
+
+page {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.view-page {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+  position: absolute;
+  overflow: auto;
+}
+
+.page-content {
+  box-sizing: border-box;
+  position: relative;
+  overflow-y: auto;
+}
+
+.imgtu {
+  width: 700rpx;
+  height: 1000rpx;
+  margin-left: 25rpx;
+  margin-right: 25rpx;
+  margin-top: 25rpx;
+}
+
+.dcolumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.drow {
+  display: flex;
+  flex-direction: row;
+}
+
+.topPic {
+  width: 100%;
+}
+
+.savePicBtn {
+  position: fixed;
+  width: 50%;
+  bottom: 0;
+  color: #69c;
+  line-height: 80rpx;
+  font-size: 32rpx;
+  border-radius: 0;
+  z-index: 2;
+}
+
+.savePicBtn::after {
+  width: 0;
+  height: 0;
+}
+
+.mainColor_bg {
+  background: #eee;
+}
+
+.home {
+  background: #69c;
+  color: #fff;
+  right: 0;
+}
+
+.bgcolor {
+  background: #69c;
+}
+
+.load {
+  padding-top: 40%;
+  line-height: 24px;
+}
+
+.cavimg {
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  /* opacity: 0.7; */
+}
+
+/**
+ var(--mColor)
+ */
+
+.canvas {
+  background-color: var(--mColor);
+  /* background-color: transparent; */
+}
+
+/* .bg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+} */

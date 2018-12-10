@@ -1,0 +1,47 @@
+<!--pages/my/wallet/gz/gz.wxml-->
+<view class='view-page'>
+  <navbar page-name="如何收益"></navbar>
+  <view class='page-content' style='height:calc(100vh - {{navH}}px);top:{{navH}}px'>
+    <view class='infoxitiao bd' style='top:{{navH}}px'></view>
+         <view class='aufocolumn'>
+
+      <view class='bottom'>
+        <view class='ttidxh'>如何收益</view>
+      </view>
+
+
+      <view class='whlloe'>
+        <view class='erliu topsan'>一、如何获取收益</view>
+        <view class='ersi topsan'>晒一下是一个可以赚钱的分享社区，即用户点击晒晒详情里面的相关商家名称或者地址时，发布此篇晒晒作者，即可获取相应的收益，收益是按照点击率收费的，即根据作者发布内容的优质程度，每次点击获取的收益是0.1元-3元不等，所以请用心写你们的晒晒哦！</view>
+                <view class='erliu topsan'>二、如何增加曝光率？</view>
+        <view class='ersi topsan'>晒一下的推荐机制是根据用户发布的图片以及文字介绍判定为是否优质内容，图片越美观，内容描述越清楚，位置定位准确，分类正确，晒一下官方就会推荐给更多用户，曝光率就会越高，当然用户们也可以将自己发布的晒晒，转发至微信好友或者社群，也是生成长图或者海报分享至朋友圈等一些其它社交渠道，曝光越多收益越多哦</view>
+                <!-- <view class='erliu topsan'>二、</view> -->
+
+        <!-- <view class='ersi topsan'>二、满10元才可以发起提现申请；</view> -->
+                <!-- <view class='erliu topsan'>三、</view> -->
+
+        <!-- <view class='ersi topsan'>三、提现时，名字和手机号码必需和登录的微信所使用的电话号码一致，如遇到名字和手机号码不一致导致提现不成功的，晒一下官方讲视为放弃处理，不再通过提现申请；</view> -->
+                <!-- <view class='erliu topsan'>四、</view> -->
+
+        <!-- <view class='ersi topsan'>四、用户发布违规内容的，晒一下官方有权禁止用户进行提现操作（违规内容判定请参照《晒一下社区规范》以及《发布规则》</view> -->
+
+        <!-- <view class='erliu topsan'>{{ondata.topsan4}}</view>
+        <view class='ersi topsan'>{{ondata.topsan5}}</view>
+
+        <view class='erliu topsan'>{{ondata.topsan6}}</view>
+
+        <view class='ersi topsan'>{{ondata.topsan7}}</view>
+
+        <view class='ersi topsan'>{{ondata.topsan8}}</view>
+
+        <view class='ersi topsan'>{{ondata.topsan9}}</view> -->
+      </view>
+    </view>
+
+
+
+
+
+
+  </view>
+</view>

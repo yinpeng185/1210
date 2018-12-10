@@ -1,0 +1,14 @@
+<!--海报  -->
+<nav-bar navbar-data='{{nvabarData}}'></nav-bar>
+<view class='home-page' style='margin-top: {{height}}px'>
+</view>
+<view class='view-page'>
+  <view class='dcolumn'>
+    <canvas canvas-id='myCanvas' hidden='{{cavhide}}' style="width: {{phone_width}}px; height: {{phone_height}}px;" bindlongtap="look" ></canvas>
+    <image src="{{imgurl}}" class='cavimg' hidden='{{imghide}}' mode='widthFix'  bindlongtap="look"></image>
+    <!-- <image  class='bg' src='../../../img/backg.png'style="width: {{phone_width}}px; height: {{phone_height}}px;"></image> -->
+    <button class='savePicBtn mainColor_bg' bindtap='goHome' wx:if='{{look}}'>返回首页</button>
+    <button class='savePicBtn mainColor_bg home' bindtap='savePic' wx:if='{{look}}'>保存图片</button>
+  </view>
+
+</view>

@@ -1,0 +1,45 @@
+<!--pages/my/wallet/gz/gz.wxml-->
+<view class='view-page'>
+  <navbar page-name="提现规则"></navbar>
+  <view class='page-content' style='height:calc(100vh - {{navH}}px);top:{{navH}}px'>
+    <view class='infoxitiao bd' style='top:{{navH}}px'></view>
+         <view class='aufocolumn'>
+
+      <view class='bottom'>
+        <view class='ttidxh'>提现规则</view>
+      </view>
+
+
+      <view class='whlloe'>
+        <!-- <view class='erliu topsan'>一、</view> -->
+        <view class='ersi topsan'>一、提现到账时间为每个工作日的10是-12时，如遇法定节假日顺延到下个工作日；</view>
+                <!-- <view class='erliu topsan'>二、</view> -->
+
+        <view class='ersi topsan'>二、满10元才可以发起提现申请；</view>
+                <!-- <view class='erliu topsan'>三、</view> -->
+
+        <view class='ersi topsan'>三、提现时，名字和手机号码必需和登录的微信所使用的电话号码一致，如遇到名字和手机号码不一致导致提现不成功的，晒一下官方讲视为放弃处理，不再通过提现申请；</view>
+                <!-- <view class='erliu topsan'>四、</view> -->
+
+        <view class='ersi topsan'>四、用户发布违规内容的，晒一下官方有权禁止用户进行提现操作（违规内容判定请参照《晒一下社区规范》以及《发布规则》</view>
+
+        <!-- <view class='erliu topsan'>{{ondata.topsan4}}</view>
+        <view class='ersi topsan'>{{ondata.topsan5}}</view>
+
+        <view class='erliu topsan'>{{ondata.topsan6}}</view>
+
+        <view class='ersi topsan'>{{ondata.topsan7}}</view>
+
+        <view class='ersi topsan'>{{ondata.topsan8}}</view>
+
+        <view class='ersi topsan'>{{ondata.topsan9}}</view> -->
+      </view>
+    </view>
+
+
+
+
+
+
+  </view>
+</view>

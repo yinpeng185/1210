@@ -1,0 +1,117 @@
+/* pages/my/wallet/wallet.wxss */
+
+page {
+  width: 100%;
+  /* background-color: #f1f4f6; */
+}
+
+.infocolumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.inforow {
+  display: flex;
+  flex-direction: row;
+}
+
+.infoxitiao {
+  height: 1rpx;
+  width: 100%;
+  background-color: #ccc;
+  /* background-color: red; */
+}
+
+.infodxt {
+  height: 20rpx;
+  width: 100%;
+  background-color: #f1f4f6;
+  /* background-color: rebeccapurple; */
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+/* 主体 */
+
+.ser {
+  font-size: 32rpx;
+  color: #666;
+  text-align: center;
+  margin-top: 200rpx;
+}
+
+.qq {
+  font-size: 98rpx;
+  color: #333;
+  height: 124rpx;
+  line-height: 124rpx;
+}
+
+.qbbz {
+  text-align: center;
+  margin-top: 60rpx;
+  height: 124rpx;
+  /* background-color: red; */
+}
+
+.qhao {
+  font-size: 58rpx;
+  height: 124rpx;
+  color: #333;
+  line-height: 124rpx;
+}
+
+.qb {
+  width: 690rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  border: 2rpx solid #e61673;
+  border-radius: 4rpx;
+  font-size: 32rpx;
+  color: #e61673;
+}
+
+.cen {
+  margin-top: 120rpx;
+  margin-left: 28rpx;
+  margin-right: 28rpx;
+}
+
+.erb {
+  font-size: 28rpx;
+  color: #999;
+  text-align: center;
+  margin-top: 20rpx;
+}
+
+.erb3 {
+  font-size: 28rpx;
+  color: #333;
+}
+
+.hxt {
+  width: 2rpx;
+  height: 26rpx;
+  background-color: #333;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  margin-top: 10rpx;
+}
+
+.dxx {
+  /* background-color: red; */
+  height: 38rpx;
+  width: 268rpx;
+  margin-right: 241rpx;
+  margin-left: 241rpx;
+  bottom: 0rpx;
+  position: absolute;
+  margin-bottom: 55rpx;
+}

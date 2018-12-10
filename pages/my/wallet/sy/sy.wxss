@@ -1,0 +1,101 @@
+/* pages/my/wallet/gz/gz.wxss */
+
+page {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.view-page {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+  position: absolute;
+  overflow: hidden;
+}
+
+.page-content {
+  box-sizing: border-box;
+  position: relative;
+  overflow-y: auto;
+}
+
+.bd {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+.infoxitiao {
+  width: 100%;
+  height: 2rpx;
+  background-color: #ccc;
+}
+
+.aufocolumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.auforow {
+  display: flex;
+  flex-direction: row;
+}
+
+.aufoxitiao {
+  height: 2rpx;
+  width: 100%;
+  background-color: #ccc;
+  /* background-color: red; */
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+/* 整体 */
+
+.ttidxh {
+  font-size: 30rpx;
+  color: #333;
+  font-weight: bold;
+}
+
+.bottom {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  width: 100%;
+  margin-top: 30rpx;
+}
+
+.whlloe {
+  width: 690rpx;
+  height: auto;
+  /* background-color: rebeccapurple; */
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+}
+
+.erliu {
+  font-size: 26rpx;
+  color: #333;
+  font-weight: bold;
+}
+
+.ersi {
+  font-size: 24rpx;
+  color: #4c4c4c;
+  text-indent: 24rpx;
+}
+
+.topsan {
+  padding-top: 30rpx;
+}

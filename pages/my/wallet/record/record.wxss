@@ -1,0 +1,74 @@
+/* pages/my/wallet/record/record.wxss */
+
+page {
+  width: 100%;
+  background-color: #f1f4f6;
+}
+
+.infocolumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.inforow {
+  display: flex;
+  flex-direction: row;
+}
+
+.infoxitiao {
+  height: 1rpx;
+  width: 100%;
+  background-color: #ccc;
+  /* background-color: red; */
+}
+
+.infodxt {
+  height: 20rpx;
+  width: 100%;
+  background-color: #f1f4f6;
+  /* background-color: rebeccapurple; */
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+/* HH */
+
+.shytxt {
+  font-size: 32rpx;
+  color: #333;
+}
+
+.shjtxt{
+  font-size: 24rpx;
+  color: #999999;
+  margin-top: 25rpx;
+  margin-bottom: 30rpx;
+}
+
+.qhaoq{
+  font-size: 32rpx;
+  color: #e61673;
+  margin-top: 5rpx;
+}
+
+.wheoe{
+  width: 690rpx;
+  height: 162rpx;
+  background-color: #fff;
+  padding-right: 30rpx;
+  padding-left: 30rpx;
+}
+
+.wher{
+  background-color: #fff;
+  height: 45rpx;
+  margin-top: 40rpx;
+  /* margin-bottom: 25rpx; */
+}
+

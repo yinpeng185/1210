@@ -1,0 +1,19 @@
+<nav-bar navbar-data='{{nvabarData}}'></nav-bar>
+<view class='home-page' style='margin-top: {{height}}px'>
+<view class='infoxitiao'></view>
+<view class='ser'>当前收益</view>
+<view class='qbbz'>
+  <view class='qq'>{{money}}
+    <text class='qhao'>¥</text>
+  </view>
+</view>
+<view class='cen'  bindtap='tixian' id='{{money}}'>
+  <view class='qb'>全部提现</view>
+</view>
+<view class='erb' bindtap='recordTop'>提现记录</view>
+<view class='inforow dxx'>
+  <view class='erb3'bindtap='ongz'>提现规则</view>
+  <view class='hxt'></view>
+  <view class='erb3'  bindtap='onsy'>如何收益</view>
+</view>
+</view>
