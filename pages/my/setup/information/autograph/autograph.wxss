@@ -1,0 +1,145 @@
+/* pages/my/autograph/autograph.wxss */
+page {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.view-page {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+  position: absolute;
+  overflow: hidden;
+}
+
+.page-content {
+  box-sizing: border-box;
+  position: relative;
+  overflow-y: auto;
+  background-color: #f1f4f6
+}
+
+.aufocolumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.auforow {
+  display: flex;
+  flex-direction: row;
+}
+
+.aufoxitiao {
+  height: 1rpx;
+  width: 100%;
+  background-color: #cccccc;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+/* 整体 */
+
+.topyi {
+  margin-top: 20rpx;
+}
+
+.whole {
+  background-color: #fff;
+  width: 100%;
+  height: auto;
+  border-top: 1px solid #ccc; 
+  border-bottom: 1px solid #ccc; 
+}
+
+.wholeer {
+  /* background-color: rosybrown; */
+  /* height: 52.5rpx; */
+  height: auto;
+  width: 710rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+
+.erb {
+  width: 28rpx;
+  height: 28rpx;
+  /* background-color: rebeccapurple; */
+  padding-top: 40rpx
+}
+
+.erimg {
+  width: 28rpx;
+  height: 28rpx;
+  /* background-color: red; */
+}
+
+.wholesan {
+  /* background-color: royalblue; */
+  width: 632rpx;
+  /* height: 43.5rpx; */
+  height: auto;
+  font-size: 28rpx;
+  color: #191919;
+    /* padding-bottom: 27rpx; */
+}
+.hhh{
+  width: 632rpx;
+  font-size: 28rpx;
+  color: #191919;
+
+}
+
+.erc{
+  font-size: 20rpx;
+  color: #cccccc;
+}
+
+
+.tjbc {
+  background-color: #28a439;
+  width: 400rpx;
+  height: 72rpx;
+  line-height: 72rpx;
+  text-align: center;
+  border: 0rpx solid #28a439;
+  border-radius: 8rpx;
+  font-size: 30rpx;
+  color: #fff;
+  /* font-weight: bold; */
+  /* font-family: Arial, Helvetica; */
+}
+
+.juhon {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  width: 100%;
+  margin-top: 30rpx;
+}
+
+/* 
+.content-breif {
+  -webkit-line-clamp: 2;
+} */
+
+
+.bd {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+.hhh{
+  padding-bottom: 10rpx;
+  padding-top: 17rpx;
+}

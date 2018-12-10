@@ -1,0 +1,64 @@
+<nav-bar navbar-data='{{nvabarData}}'></nav-bar>
+<view class='home-page' style='margin-top: {{height}}px'></view>
+<view class='view-page'>
+  <navbar page-name="地址收藏"></navbar>
+    <view class='infodxt'></view>
+    <view class='infoxitiao'></view>
+    <!-- <view>
+      <view class='inforow homg'>
+        <image class='imgdx' src='/images/my/shop.png'></image>
+        <view class='infocolumn timgd'>
+          <text class='ztdx'>SOFTREE索菲特丽冰淇淋</text>
+          <view class='ztdxer'>吃的 冰淇淋</view>
+          <view class='inforow imdz'>
+            <view>
+              <image class='imger' src='/images/my/wshop.png'></image>
+            </view>
+            <view class='ztdxsan'>
+              杭州展览东路武林广场39号
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class='infoxitiao ertop'></view>
+    </view>
+
+    <view>
+      <view class='inforow homg'>
+        <image class='imgdx' src='/images/my/shop.png'></image>
+        <view class='infocolumn timgd'>
+          <text class='ztdx'>SOFTREE索菲特丽冰淇淋</text>
+          <view class='ztdxer'>吃的 冰淇淋</view>
+          <view class='inforow imdz'>
+            <view>
+              <image class='imger' src='/images/my/wshop.png'></image>
+            </view>
+            <view class='ztdxsan'>
+              杭州展览东路武林广场39号
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class='infoxitiao ertop'></view>
+    </view> -->
+
+    <view wx:for="{{diz}}">
+      <view class='inforow homg'>
+        <image class='imgdx' src='{{item.image}}'></image>
+        <view class='infocolumn timgd'>
+          <text class='ztdx'>{{item.addressname}}</text>
+          <!-- <view class='ztdxer'>{{item.addressname}}</view> -->
+          <view class='inforow imdz'>
+            <view>
+              <image class='imger' src='/images/my/wshop.png'></image>
+            </view>
+            <view class='ztdxsan'>
+             {{item.address}}
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class='infoxitiao ertop'></view>
+    </view>
+
+</view>

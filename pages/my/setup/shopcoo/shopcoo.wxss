@@ -1,0 +1,111 @@
+/* pages/my/setup/shopcoo/shopcoo.wxss */
+
+page {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.view-page {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+  position: absolute;
+  overflow: hidden;
+}
+
+.page-content {
+  box-sizing: border-box;
+  position: relative;
+  overflow-y: auto;
+}
+
+.infocolumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.inforow {
+  display: flex;
+  flex-direction: row;
+}
+
+.infoxitiao {
+  height: 2rpx;
+  width: 100%;
+  background-color: #ccc;
+}
+
+.infodxt {
+  height: 20rpx;
+  width: 100%;
+  background-color: #f1f4f6;
+}
+
+.imgdx {
+  width: 140rpx;
+  height: 140rpx;
+}
+
+.ztdx {
+  font-size: 36rpx;
+  color: #000;
+  height: 48rpx;
+}
+
+.ztdxer {
+  font-size: 24rpx;
+  color: #999;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.imger {
+  height: 24rpx;
+  width: 19rpx;
+  padding-top: 10rpx;
+  padding-right: 10rpx;
+}
+
+.ztdxsan {
+  font-size: 24rpx;
+  color: #e61673;
+  height: 32rpx;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.homg {
+  margin-top: 20rpx;
+  margin-left: 60rpx;
+}
+
+.imdz {
+  height: 42rpx;
+  line-height: 42rpx;
+  margin-top: 30rpx;
+}
+
+.timgd {
+  margin-top: 10rpx;
+  margin-left: 20rpx;
+}
+
+.ertop{
+  margin-top: 20rpx;
+}
+
+.bd {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}

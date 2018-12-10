@@ -1,0 +1,128 @@
+/* pages/my/information/information.wxss */
+page {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  background-color: #f1f4f6;
+}
+
+.view-page {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+  position: absolute;
+  overflow: hidden;
+}
+
+.page-content {
+  box-sizing: border-box;
+  position: relative;
+  overflow-y: auto;
+}
+
+.infocolumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.inforow {
+  display: flex;
+  flex-direction: row;
+}
+
+.infoxitiao {
+  height: 2rpx;
+  width: 100%;
+  background-color: #ccc;
+  /* background-color: red; */
+}
+
+.infodxt {
+  height: 20rpx;
+  width: 100%;
+  background-color: #f1f4f6;
+  /* background-color: rebeccapurple; */
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+/* 主体 */
+.wwhole{
+  width: 100%;
+  background-color: #ffffff;
+  height: auto;
+}
+.whole {
+  width: 700rpx;
+  height: 100rpx;
+  /* background-color: royalblue; */
+  margin-right: 30rpx;
+  margin-left: 20rpx;
+  margin-top: 15rpx;
+  margin-bottom: 15rpx;
+}
+
+.imgdx {
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.image {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+
+.fonsize {
+  font-size: 30rpx;
+  color: #999;
+}
+
+.imgjtdx {
+  width: 14rpx;
+  height: 24rpx;
+}
+
+.topp {
+  padding-top: 35rpx;
+}
+
+.top {
+  padding-top: 27rpx;
+  padding-right: 20rpx;
+}
+
+.wholeer{
+  width: 690rpx;
+  height: 48rpx;
+  /* background-color: royalblue; */
+  margin-right: 30rpx;
+  margin-left: 30rpx;
+  margin-bottom: 30rpx;
+  margin-top: 30rpx;
+}
+
+.erti{
+  font-size: 32rpx;
+  color: #333333;
+}
+
+.toper{
+  padding-top: 10rpx;
+  padding-left: 20rpx;
+}
+
+.bd {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}

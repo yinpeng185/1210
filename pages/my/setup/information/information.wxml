@@ -1,0 +1,74 @@
+<!--pages/my/information/information.wxml-->
+<nav-bar navbar-data='{{nvabarData}}'></nav-bar>
+<view class='home-page' style='margin-top: {{height}}px'></view>
+<view class='view-page'>
+  <navbar page-name="个人信息"></navbar>
+  <!-- <view class='page-content' style='height:calc(100vh - {{navH}}px);top:{{navH}}px'> -->
+    <!--这里放你的内容-->
+    <!-- <view class='infoxitiao bd'style='top:{{navH}}px'></view> -->
+    <view class='infocolumn'>
+      <!-- <view class='infoxitiao'></view> -->
+      <view class='infodxt'></view>
+      <view class='infoxitiao'></view>
+      <view class='wwhole'>
+        <view class='whole'>
+          <view class='imgdx left'>
+            <image class='image ' bindtap='previewImage' data-src="{{avatarUrl}}" src='{{avatarUrl}}'></image>
+
+          </view>
+          <view catchtap='onChooseUploadImageTap'>
+            <image class='imgjtdx right topp' src='/images/my/information/jt.png '></image>
+            <text class='fonsize right top'>修改头像</text>
+          </view>
+
+        </view>
+        <view class='infoxitiao'></view>
+        <view class='wholeer' bindtap='nchTop'>
+          <view class='left'>
+            <view class='erti'>昵称</view>
+          </view>
+          <image class='imgjtdx right toper' src='/images/my/information/jt.png '></image>
+          <text class='fonsize right'>{{userInfo.nickName}}</text>
+        </view>
+        <view class='infoxitiao'></view>
+        <!-- <view class='wholeer'>
+          <view class='left'>
+            <view class='erti'>性别</view>
+          </view>
+          <image class='imgjtdx right toper'></image>
+          <text class='fonsize right' wx:if="{{!userInfo.gender}}">未设置</text>
+          <text class='fonsize right' wx:if="{{userInfo.gender == 1}}">男</text>
+          <text class='fonsize right' wx:if="{{userInfo.gender == 2}}">女</text>
+        </view> -->
+         <view class='wholeer'>
+          <view class='left'>
+            <view class='erti'>性别</view>
+          </view>
+           <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+            <image class='imgjtdx right toper' src='/images/my/information/jt.png '></image>
+            <view class='fonsize right'>{{array[gender]}}</view>
+          </picker>
+        </view>
+        <view class='infoxitiao'></view>
+        <view class='wholeer'>
+          <view class='left'>
+            <view class='erti'>常住地</view>
+          </view>
+          <image class='imgjtdx right toper' ></image>
+          <text class='fonsize right'>{{userInfo.province}} {{userInfo.city}}</text>
+        </view>
+        <!-- <view class='infoxitiao'></view> -->
+        
+        <view class='infoxitiao'></view>
+        <view class='wholeer' bindtap='gxqmTop'>
+          <view class='left'>
+            <view class='erti'>个性签名</view>
+          </view>
+          <image class='imgjtdx right toper' src='/images/my/information/jt.png '></image>
+          <text class='fonsize right'>{{userInfo.autograph_name?userInfo.autograph_name:'未设置'}}</text>
+        </view>
+        <view class='infoxitiao'></view>
+      </view>
+    <!-- </view> -->
+  </view>
+</view>

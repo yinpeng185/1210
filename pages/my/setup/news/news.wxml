@@ -1,0 +1,52 @@
+<nav-bar navbar-data='{{nvabarData}}'></nav-bar>
+<view class='home-page' style='margin-top: {{height}}px'> </view>
+<view class='locolumn'>
+  <view class='loxitiao'></view>
+  <view class='qbdx'>通知栏消息推送</view>
+  <view class='loxitiao shib'></view>
+  <view class='weyi'>
+    <view class='whole'>
+      <text class='ztid'>有人@了我</text>
+      <view class='switch right'>
+        <switch checked="{{ondata.yratw_kg==2? 'true': ''}}" bindchange="switch1Change" id='yratw_kg' />
+      </view>
+    </view>
+    <view class='loxitiao'></view>
+  </view>
+  <view class='weyi'>
+    <view class='whole'>
+      <text class='ztid'>有人评论了我的晒晒</text>
+      <view class='switch right'>
+        <switch checked="{{ondata.yrpl_kg==2? 'true': ''}}" bindchange="switch1Change" id='yrpl_kg'/>
+      </view>
+    </view>
+    <view class='loxitiao'></view>
+  </view>
+  <view class='weyi'>
+    <view class='whole'>
+      <text class='ztid'>有人点赞了我的晒晒</text>
+      <view class='switch right'>
+        <switch checked="{{ondata.yrdz_kg==2? 'true': ''}}" bindchange="switch1Change" id='yrdz_kg'/>
+      </view>
+    </view>
+    <view class='loxitiao'></view>
+  </view>
+  <view class='weyi'>
+    <view class='whole'>
+      <text class='ztid'>新增收藏</text>
+      <view class='switch right'>
+        <switch checked="{{ondata.xzsc_kg==2? 'true': ''}}" bindchange="switch1Change" id='xzsc_kg'/>
+      </view>
+    </view>
+    <view class='loxitiao'></view>
+  </view>
+  <view class='weyi'>
+    <view class='whole'>
+      <text class='ztid'>通知消息</text>
+      <view class='switch right'>
+        <switch checked="{{ondata.tzxx_kg==2? 'true': ''}}" bindchange="switch1Change" id='tzxx_kg'/>
+      </view>
+    </view>
+    <view class='loxitiao'></view>
+  </view>
+</view>

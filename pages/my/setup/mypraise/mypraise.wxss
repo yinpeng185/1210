@@ -1,0 +1,79 @@
+/* pages/my/setup/mypraise/mypraise.wxss */
+
+page {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.view-page {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+  position: absolute;
+  overflow: hidden;
+}
+
+.page-content {
+  box-sizing: border-box;
+  position: relative;
+  overflow-y: auto;
+}
+.bd {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+.infocolumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.inforow {
+  display: flex;
+  flex-direction: row;
+}
+
+.infoxitiao {
+  height: 1rpx;
+  width: 100%;
+  background-color: #ccc;
+  /* background-color: red; */
+}
+
+.infodxt {
+  height: 20rpx;
+  width: 100%;
+  background-color: #f1f4f6;
+  /* background-color: rebeccapurple; */
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+/* 主体 */
+
+
+
+.item-view {
+  width: 234rpx;
+  float: left;
+  margin-left: 12rpx;
+  margin-top: 10rpx;
+  height: 312rpx;
+}
+
+.image {
+  width: 234rpx;
+  height:312rpx;
+}
+

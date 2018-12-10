@@ -1,0 +1,91 @@
+/* pages/my/setup/aboutshai/aboutshai.wxss */
+
+page {
+  width: 100%;
+  background-color: #f1f4f6;
+}
+
+.infocolumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.inforow {
+  display: flex;
+  flex-direction: row;
+}
+
+.infoxitiao {
+  height: 1rpx;
+  width: 100%;
+  background-color: #ccc;
+  /* background-color: red; */
+}
+
+.infodxt {
+  height: 20rpx;
+  width: 100%;
+  background-color: #f1f4f6;
+  /* background-color: rebeccapurple; */
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+/* 主体 */
+
+.hh {
+  width: 690rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  /* background-color: red; */
+  height: 48rpx;
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+}
+
+.jtimgdx {
+  width: 14rpx;
+  height: 24rpx;
+}
+
+.zantid {
+  font-size: 32rpx;
+  color: #333;
+}
+
+.ssimg {
+  padding-top: 10rpx;
+}
+
+.topershi {
+  margin-top: 20rpx;
+}
+
+.whole {
+  width: 100%;
+  background-color: #fff;
+}
+
+.te {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.shai {
+  font-size: 36rpx;
+  color: #7f7f7f;
+  margin-bottom: 30rpx;
+}
+.log{
+  width: 80rpx;
+  height: 80rpx;
+  margin-bottom: 40rpx;
+  margin-top: 60rpx;
+}

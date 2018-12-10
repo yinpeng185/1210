@@ -1,0 +1,41 @@
+<nav-bar navbar-data='{{nvabarData}}'></nav-bar>
+<view class='home-page' style='margin-top: {{height}}px'></view>
+<view class='view-page'>
+ 
+    <view class='aufocolumn'>
+      <view class='aufoxitiao topyi'></view>
+      <form bindsubmit="formSubmit">
+        <view class='whole'>
+          <view class='wholeer'>
+            <view class="textarea-wrp">
+              <textarea auto-focus="true" style="height: 8em" placeholder='点此输入你要反馈的信息,帮助晒晒更好的成长！' name="textarea" />
+            </view>
+            <view class='pp'>
+              <view class='scroll-lan'>
+                <scroll-view scroll-x class="scroll-view_H">
+                  <view class='image' style='border: 1rpx dashed #fff;' wx:for="{{pics}}" wx:key='key' wx:for-item="image" data-id='{{index}}'>
+                    <image class='img-img' src='{{image}}' mode="aspectFill" data-src="{{image}}" bindtap="previewImage"></image>
+                    <text class="image-close" catchtap="onDeleteImgTap" data-index="{{index}}"></text>
+                  </view>
+                  <!-- <view class="image {{isShow?'true':'hideTrue'}}" bindtap="onChooseUploadImageTap"> -->
+                  <view class="image" wx:if="{{pics.length<9}}" bindtap="onChooseUploadImageTap">
+                    <view class="image-plus"></view>
+                  </view>
+                </scroll-view>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class='juhon'>
+          <button formType="submit" class='tjbc'>
+            提交保存
+          </button>
+        </view>
+      </form>
+
+      <view class='bottom' bindtap='problemTop'>
+        <view class='tidx'>常见问题</view>
+      </view>
+    </view>
+
+</view>

@@ -1,0 +1,25 @@
+<nav-bar navbar-data='{{nvabarData}}'></nav-bar>
+<view class='home-page' style='margin-top: {{height}}px'></view>
+<view class='view-page'>
+  <navbar page-name="我的点赞"></navbar>
+    <view class='infocolumn'>
+      <view class='infodxt'></view>
+      <view class='infoxitiao wu'></view>
+      <view class='content'>
+        <view class='item-view'  wx:for="{{shoucang}}" wx:key="{{item}}">
+          <image class='image' mode='scaleToFill' src='{{item.image}}'></image>
+        </view>
+      </view>
+
+
+
+
+      <!-- <view style='display:flex; flex-direction:row;justify-content:center;' wx:for="{{shoucang}}" wx:key="{{id}}" wx:for-item="item">
+
+        <image class='imgtpxd' mode='widthFix' src='{{item.image[0]}}'></image>
+
+      </view> -->
+
+    </view>
+
+</view>

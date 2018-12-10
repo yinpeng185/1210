@@ -1,0 +1,30 @@
+<nav-bar navbar-data='{{nvabarData}}'></nav-bar>
+<view class='home-page' style='margin-top: {{height}}px'>
+</view>
+<view class='view-page'>
+  <navbar page-name="修改个性签名"></navbar>
+  <view class='page-content' style='height:calc(100vh - {{navH}}px);top:{{navH}}px'>
+    <form report-submit='true' bindsubmit='tijiao'>
+      <view class='aufocolumn jb'>
+        <view class='aufoxitiaoo topyi'></view>
+        <view class='whole'>
+          <view class='wholeer'>
+            <view class='wholesan left'>
+              <view class='hhh'>
+                <textarea class='hhh' style='height:3em' name='autograph_name' value='{{userInfo.autograph_name}}' />
+              </view>
+            </view>
+            <view class='erb right'>
+              <image class='erimg' src='/images/my/autograph/xch.png'></image>
+            </view>
+          </view>
+        </view>
+        <view class='juhon'>
+          <button formType="submit" class='tjbc'>
+            提交保存
+          </button>
+        </view>
+      </view>
+    </form>
+  </view>
+</view>

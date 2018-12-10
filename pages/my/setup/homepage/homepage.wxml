@@ -1,0 +1,106 @@
+<!--pages/my/setup/homepage/homepage.wxml-->
+<nav-bar navbar-data='{{nvabarData}}'></nav-bar>
+<view class='home-page' style='margin-top: {{height}}px'> </view>
+<view class='infoxitiao' style='margin-top: {{height}}px'></view>
+<view class='infoxitiao'></view>
+<view class='whoeell'>
+  <image class='dtimg' bindtap='previewImage' data-src='{{userInfo.avatarUrl}}' src='{{userInfo.avatarUrl}}'></image>
+
+  <view class='infocolumn right'>
+    <view>
+      <view class='inforow'>
+        <view class='infocolumn widthshuw yishiyi'>
+          <view class='shzzt'>{{userInfo.user_praise}}</view>
+          <view class='wpzt'>获赞</view>
+        </view>
+
+        <view class='infocolumn widthshuw yishiyi'>
+          <view class='shzzt'>{{userInfo.user_follow}}</view>
+          <view class='wpzt'>关注</view>
+        </view>
+
+        <view class='infocolumn widthshuw yishiyi'>
+          <view class='shzzt'>{{userInfo.user_fans}}</view>
+          <view class='wpzt'>粉丝</view>
+        </view>
+      </view>
+      <view class='inforow right topsh'>
+        <view class="{{guanzhu? 'yiguz':'gzh'}} righthh"  bindtap='add_guanzhu' data-user_id='{{userInfo.user_id}}'>
+          <!-- <image class='imgshi' src='/images/my/homepage/jai.png' wx:if='{{!guanzhu}}'></image> -->
+
+          {{guanzhu? '已关注':'关注'}}
+        </view>
+        <view class='kg' bindtap='get_add_info'>
+          <image class='imgkg' src="{{showMaltose? '/images/my/homepage/shl.png': '/images/my/homepage/shl-x.png'}}"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class='col' hidden="{{showMaltose}}">
+  <view class='toplr'>
+    <view class='ztdzer left'>你可能感兴趣</view>
+    <image class='imgpljt right' src='/images/news/jt.png'></image>
+    <view class='ztdzer right'>查看更多</view>
+  </view>
+  <view class='scroll-lan'>
+    <scroll-view scroll-x class="scroll-view_H">
+      <view class='gzhsan' wx:for='{{goods_info}}' wx:key='item'>
+        <image class='de' src='/images/my/homepage/de.png'></image>
+        <image class='diufang' src='{{item.avatarUrl}}'></image>
+        <view class='name'>{{item.nickName}}</view>
+        <view class='titel'>{{item.autograph_name?item.autograph_name:'未设置'}}</view>
+        <view class='guerer'>
+          <view class='gzher'>
+
+            <image class='imgshi' src='/images/my/homepage/jai.png'></image>
+            关注
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>
+<view class='serpl'>
+  <view class='ztsan left'>{{userInfo.nickName}}</view>
+
+  <image class='imgxb left' src='/images/my/xb.png' wx:if="{{userInfo.gender == 2}}"></image>
+  <image class='imgxb left' src='/images/my/nx.png' wx:if="{{userInfo.gender == 1}}"></image>
+
+  <view class='gzhsi left'>{{userInfo.city}}</view>
+</view>
+<view class='ersi'>{{userInfo.autograph_name==''? '未设个性签名' : userInfo.autograph_name }}</view>
+<view class='vv'>
+  <view class='xiaoz left' data-index="0" catchtap='navbarTap'>
+    <view class="fxx {{hh==0?'activ':''}}">Ta的晒晒</view>
+    <view class="xiao {{hh==0?'activey':''}}"></view>
+  </view>
+  <view class='hx left'></view>
+  <view class="xiaoz right" data-index="1" catchtap='navbarTap'>
+    <view class="fxx {{hh==1?'activ':''}}">Ta的收藏</view>
+    <view class="xiao {{hh==1?'activey':''}}"></view>
+  </view>
+</view>
+
+
+
+
+<view hidden="{{hh==1}}">
+  <view class='sjsj' wx:for="{{shaishai}}" wx:key="item" id="{{item.id}}" bindtap='godetailInfo1'>
+    <view class='imgfss'>
+      <image class='imgfs' src='{{item.image[0]}}'></image>
+      <image class='didd' hidden='{{zjid==item.user_id?false:true}}' src='/images/my/dz.png'></image>
+      <text class='zdz' hidden='{{zjid==item.user_id?false:true}}'>{{item.user_praise}}</text>
+    </view>
+  </view>
+</view>
+
+<view hidden="{{hh==0}}">
+  <view class='sjsj' wx:for="{{shoucang}}" wx:key="item" id='{{item.id}}' bindtap='godetailInfo2'>
+    <view class='imgfss'>
+      <image class='imgfs' src='{{item.image}}'></image>
+      <image class='didd' hidden='{{zjid==item.user_id?false:true}}' src='/images/my/dz.png'></image>
+      <text class='zdz' hidden='{{zjid==item.user_id?false:true}}'>{{item.user_praise}}</text>
+    </view>
+  </view>
+</view>

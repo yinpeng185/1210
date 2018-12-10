@@ -1,0 +1,38 @@
+<nav-bar navbar-data='{{nvabarData}}'>
+</nav-bar>
+<view class='home-page' style='margin-top: {{height}}px'>
+</view>
+<view class='view-page'>
+  <navbar page-name="修改昵称"></navbar>
+  <view class='page-content' style='height:calc(100vh - {{navH}}px);top:{{navH}}px'>
+    <view class='aufoxitiao bd' style='top:{{navH}}px'></view>
+    <form report-submit='true' bindsubmit='tijiao'>
+      <view class='aufocolumn jb'>
+        <!-- <view class='aufoxitiao'></view> -->
+        <view class='aufoxitiaoo topyi'></view>
+        <view class='whole'>
+          <view class='wholeer'>
+            <view class='wholesan left'>
+              <view class='whzt'>
+                <input class='wholesan' name='userName' value='{{userInfo.nickName}}'></input>
+              </view>
+            </view>
+            <view class='erb right'>
+              <image class='erimg' src='/images/my/autograph/xch.png'></image>
+            </view>
+          </view>
+        </view>
+        <view class='zhu'>
+          <view class='erc'>
+            不超过十个字
+          </view>
+        </view>
+        <view class='juhon'>
+          <button formType="submit" class='tjbc'>
+            提交保存
+          </button>
+        </view>
+      </view>
+    </form>
+  </view>
+</view>

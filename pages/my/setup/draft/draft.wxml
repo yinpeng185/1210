@@ -1,0 +1,22 @@
+<nav-bar navbar-data='{{nvabarData}}'></nav-bar>
+<view class='home-page' style='margin-top: {{height}}px'></view>
+<import src="../public/public.wxml" />
+<view class='view-page'>
+    <view class='hhu'></view>
+    <view class='xiaotiao'></view>
+    <!-- <view class='hhu'></view> -->
+     <scroll-view scroll-y="true" style="margin-bottom:;height:100%" bindscrolltolower="lower" data-lastid="{{lastid}}">
+      <view class='content'>
+        <view class="item-view">
+          <block wx:for="{{dataArray}}" wx:key="item" wx:for-index="index">
+            <template is="item" data="{{...item ,index}}" wx:if="{{index%2==0}}"></template>
+          </block>
+        </view>
+        <view class="item-view">
+          <block wx:for="{{dataArray}}" wx:key="item" wx:for-index="index">
+            <template is="item" data="{{...item ,index}}" wx:if="{{index%2==1}}"></template>
+          </block>
+        </view>
+      </view>
+    </scroll-view>
+</view>

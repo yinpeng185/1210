@@ -1,0 +1,121 @@
+<nav-bar navbar-data='{{nvabarData}}'></nav-bar>
+<view class=' kkkkk' wx:if="{{look}}">
+  <view class='dcolumn'>
+    <canvas   canvas-id='myCanvas' hidden='{{cavhide}}' style="margin-top:1500rpx;width: {{phone_width}}px; height: {{phone_height}}px;" ></canvas>
+    <image src="{{imgurl}}" class='cavimg' hidden='{{imghide}}' mode='widthFix'></image>
+    <image class='fffdd'  bindtap='fffdd' src='/img/f.png' wx:if='{{look}}'></image>
+    <!-- <image  class='bg' src='../../../img/backg.png'style="width: {{phone_width}}px; height: {{phone_height}}px;"></image> -->
+    <!-- <button class='savePicBtn mainColor_bg' bindtap='goHome' wx:if='{{look}}'>返回首页</button> -->
+    <button class='savePicBtn mainColor_bg home' bindtap='savePic' wx:if='{{look}}'>{{ononlo}}</button>
+  </view>
+</view>
+<view class='home-page' style='margin-top: {{height}}px'>
+  <view class='view-page'>
+    <navbar page-name="设置"></navbar>
+    <view class='page-content b' style=''>
+      <!-- <view class='infoxitiao bd' style='top:{{navH}}px'></view> -->
+      <view class='infoxitiao topershi'></view>
+      <view class='whole' bindtap='gerxxTop'>
+        <view class='hh'>
+          <view class='zantid left'>个人信息</view>
+          <image class='jtimgdx right ssimg' src='/images/news/jt.png'></image>
+        </view>
+      </view>
+      <view class='infoxitiao'></view>
+      <view class='whole' bindtap='dzTop'>
+        <view class='hh'>
+          <view class='zantid left'>我的点赞</view>
+          <image class='jtimgdx right ssimg' src='/images/news/jt.png'></image>
+        </view>
+      </view>
+      <view class='infoxitiao'></view>
+      <view class='whole' bindtap='homepageTop'>
+        <view class='hh'>
+          <view class='zantid left'>我的草稿</view>
+          <image class='jtimgdx right ssimg' src='/images/news/jt.png'></image>
+        </view>
+      </view>
+      <view class='infoxitiao'></view>
+      <view class='whole' bindtap='shpTop'>
+        <view class='hh'>
+          <view class='zantid left'>地址收藏</view>
+          <image class='jtimgdx right ssimg' src='/images/news/jt.png'></image>
+        </view>
+      </view>
+      <view class='infoxitiao'></view>
+      <view class='whole' catchtap='share'>
+        <view class='hh'>
+          <view class='zantid left'>生成个人海报</view>
+          <image class='jtimgdx right ssimg' src='/images/news/jt.png'></image>
+        </view>
+      </view>
+      <view class='whole topershi'>
+        <view class='hh' bindtap='privacyTop'>
+          <view class='zantid left'>隐私设置</view>
+          <image class='jtimgdx right ssimg' src='/images/news/jt.png'></image>
+        </view>
+      </view>
+      <view class='infoxitiao'></view>
+      <view class='whole' bindtap='newsTop'>
+        <view class='hh'>
+          <view class='zantid left'>消息设置</view>
+          <image class='jtimgdx right ssimg' src='/images/news/jt.png'></image>
+        </view>
+      </view>
+      <!-- <view class='infoxitiao'></view>
+    <view class='whole'>
+      <view class='hh'>
+        <view class='zantid left'>清除缓存</view>
+        <image class='jtimgdx right ssimg' src='/images/news/jt.png'></image>
+      </view>
+    </view> -->
+
+      <view class='whole topershi'>
+        <view class='hh' bindtap='opinionTop'>
+          <view class='zantid left'>意见反馈</view>
+          <image class='jtimgdx right ssimg' src='/images/news/jt.png'></image>
+        </view>
+      </view>
+      <view class='infoxitiao'></view>
+      <view class='whole' bindtap='aboutshaiTop'>
+        <view class='hh'>
+          <view class='zantid left'>关于晒一下</view>
+          <image class='jtimgdx right ssimg' src='/images/news/jt.png'></image>
+        </view>
+      </view>
+      <!--mask-->
+      <view class="drawer_screen" bindtap="powerDrawer" data-statu="close" wx:if="{{showModalStatus}}"></view>
+      <!--content-->
+      <!--使用animation属性指定需要执行的动画-->
+      <view animation="{{animationData}}" class="drawer_attr_box" wx:if="{{showModalStatus}}">
+        <view class="drawer_content ">
+          <view class='defxjd'>
+            <view class='deziti'>
+              分享到
+            </view>
+            <view class='inforow dezimg'>
+              <view class='ss' >
+                <button class='buttonn' open-type="share">
+                  <image class='imdedx' src='/images/hnr/hxq/wxdup.png'></image>
+                </button>
+                <view class='imgzit'>微信好友</view>
+              </view>
+              <view class='ss'>
+                <button class='buttonn' bindtap='share'>
+                  <image class='imdedx'  src='/images/hnr/hxq/hb.png'></image>
+                </button>
+                <view class='imgzit'>生成海报</view>
+              </view>
+            </view>
+            <view class='quxtop'>
+              <view class='plxt'></view>
+              <view class='qux' bindtap="powerDrawer" data-statu="close" wx:if="{{showModalStatus}}">
+                取消
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

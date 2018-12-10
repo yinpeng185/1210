@@ -1,0 +1,46 @@
+<nav-bar navbar-data='{{nvabarData}}'></nav-bar>
+<view class='home-page' style='margin-top: {{height}}px'> </view>
+<view class='locolumn'>
+  <view class='loxitiao'></view>
+  <view class='qbdx'>评论、@设置</view>
+  <view class='loxitiao shib'></view>
+  <view class='weyi'>
+    <view class='whole'>
+      <text class='ztid'>仅我关注的人可以进行评论</text>
+      <view class='switch right'>
+        <switch checked="{{ondata.pinglun_kg==2? 'true': ''}}" bindchange="switch1Change" id='pinglun_kg'/>
+      </view>
+    </view>
+    <view class='loxitiao'></view>
+  </view>
+  <view class='weyi'>
+    <view class='whole'>
+      <text class='ztid'>仅我关注的人可以@我</text>
+      <view class='switch right'>
+        <switch checked="{{ondata.atw_kg==2? 'true': ''}}"  bindchange="switch1Change" id='atw_kg'/>
+      </view>
+    </view>
+    <view class='loxitiao'></view>
+  </view>
+  <view class='qbdx'>授权设置</view>
+  <view class='loxitiao shib'></view>
+  <view class='weyi'>
+    <view class='whole'>
+      <text class='ztid'>使用我的地理位置</text>
+      <view class='switch right'>
+        <switch checked="{{ondata.dlwz_kg==2? 'true': ''}}" bindchange="switch1Change" id='dlwz_kg'/>
+      </view>
+    </view>
+    <view class='loxitiao'></view>
+  </view>
+  <view class='weyi'>
+    <view class='whole'>
+      <text class='ztid'>使用我的用户信息</text>
+      <view class='switch right'>
+        <switch checked="{{ondata.syxx_kg==2? 'true': ''}}" bindchange="switch1Change" id='syxx_kg'/>
+      </view>
+    </view>
+    <view class='loxitiao'></view>
+  </view>
+
+</view>

@@ -1,0 +1,25 @@
+<nav-bar navbar-data='{{nvabarData}}'></nav-bar>
+<view class='home-page' style='margin-top: {{height}}px'> </view>
+<view class='aufocolumn'>
+  <view class='aufoxitiao'></view>
+  <view class='bottom'>
+    <view class='ttidxh'>{{ondata.topsan1}}</view>
+  </view>
+
+
+  <view class='whlloe'>
+    <view class='erliu topsan'>{{ondata.topsan2}}</view>
+    <view class='ersi topsan'>{{ondata.topsan3}}</view>
+
+    <view class='erliu topsan'>{{ondata.topsan4}}</view>
+    <view class='ersi topsan'>{{ondata.topsan5}}</view>
+
+    <view class='erliu topsan'>{{ondata.topsan6}}</view>
+
+    <view class='ersi topsan'>{{ondata.topsan7}}</view>
+
+    <view class='ersi topsan'>{{ondata.topsan8}}</view>
+
+    <view class='ersi topsan'>{{ondata.topsan9}}</view>
+  </view>
+</view>

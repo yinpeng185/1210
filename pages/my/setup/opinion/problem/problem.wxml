@@ -1,0 +1,21 @@
+<!--pages/my/setup/opinion/problem/problem.wxml-->
+<nav-bar navbar-data='{{nvabarData}}'>
+</nav-bar>
+<view class='home-page' style='margin-top: {{height}}px'>
+</view>
+<view class='aufocolumn'>
+  <view class='aufoxitiao'></view>
+  <view class='bottom'>
+    <view class='ttidxh'>晒晒问题</view>
+  </view>
+  <view class='whlloe'>
+    <view class='erliu topsan'>一、如何发布晒晒？</view>
+    <view class='ersi topsan'>点击小程序的+号键即可发布</view>
+    <view class='erliu topsan'>二、如何让更多小伙伴看到我的晒晒呢？</view>
+    <view class='ersi topsan'>首先得发布真实的内容，还有就是要分类清楚，图片呢需要越美观越好，内容也是需要越详细越好，尽量为小伙伴创造更有价值的东西，最重要的是标注的话题还有店铺一定要准确哦，不然不仅没有曝光率，可能还会被删除！</view>
+    <view class='erliu topsan'>三、为什么我发布的晒晒违规呢？</view>
+    <view class='ersi topsan'>晒晒的内容违反了晒晒社区规范，晒一下官方会对内容进行相应处理，具体规范详见：晒一下社区规范。</view>
+    <view class='erliu topsan'>四、怎么样获取更多收益？</view>
+    <view class='ersi topsan'>首先你得精准定位好你想晒的地址或者是商店，待审核通过上线以后，你可以将此链接分享至微信好友，或者生成海报、长图分享至朋友圈，每一次点击商铺都能获取收益，上不封顶哦！记住了哦，不是阅读量，不是点赞数，是点击你所发布的店铺名称或者是地址才可以有收益。</view>
+  </view>
+</view>

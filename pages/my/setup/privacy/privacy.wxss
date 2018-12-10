@@ -1,0 +1,79 @@
+/* pages/my/setup/privacy/privacy.wxss */
+
+page {
+  width: 100%;
+  background-color: #f1f4f6;
+}
+
+.locolumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.lorow {
+  display: flex;
+  flex-direction: row;
+}
+
+.loxitiao {
+  height: 1rpx;
+  width: 100%;
+  background-color: #ccc;
+  /* background-color: red; */
+}
+
+.lodxt {
+  height: 20rpx;
+  width: 100%;
+  /* background-color: #f1f4f6; */
+  background-color: rebeccapurple;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.shib {
+  margin-top: 15rpx;
+}
+
+.qbdx {
+  font-size: 26rpx;
+  color: #333333;
+  margin-top: 35rpx;
+  margin-left: 30rpx;
+}
+
+.ztid {
+  font-size: 30rpx;
+  color: #333;
+  padding-left: 10rpx;
+}
+
+/* 主体 */
+
+.weyi{
+  width: 100%;
+  height: auto;
+  background-color: #ffffff;
+}
+
+.whole{
+  width: 700rpx;
+  height: 68rpx;
+  background-color: #ffffff;
+  margin-left: 25rpx;
+  margin-right: 25rpx;
+  margin-top: 15rpx;
+  margin-bottom: 15rpx; 
+  line-height: 60rpx;
+}
+
+.switch{
+  height: 64rpx;
+  width: 114rpx;
+}

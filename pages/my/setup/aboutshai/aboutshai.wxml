@@ -1,0 +1,31 @@
+<nav-bar navbar-data='{{nvabarData}}'></nav-bar>
+<view class='home-page' style='margin-top: {{height}}px'> </view>
+<view class='infoxitiao'></view>
+<view class='te'>
+<image class='log' src='/images/icon/logo.png'></image>
+</view>
+<view class='te'>
+  <view class='shai'>晒一下 6.2.7</view>
+</view>
+<view class='infoxitiao'></view>
+<view class='whole' bindtap='standardTop'>
+  <view class='hh'>
+    <view class='zantid left'>社区规范</view>
+    <image class='jtimgdx right ssimg' src='/images/news/jt.png'></image>
+  </view>
+</view>
+<view class='infoxitiao'></view>
+<view class='whole' bindtap='clauseTop'>
+  <view class='hh'>
+    <view class='zantid left'>服务条款</view>
+    <image class='jtimgdx right ssimg' src='/images/news/jt.png'></image>
+  </view>
+</view>
+<view class='infoxitiao'></view>
+<view class='whole' bindtap='privacyTop'>
+  <view class='hh'>
+    <view class='zantid left'>隐私政策</view>
+    <image class='jtimgdx right ssimg' src='/images/news/jt.png'></image>
+  </view>
+</view>
+<view class='infoxitiao'></view>

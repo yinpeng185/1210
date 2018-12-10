@@ -1,0 +1,14 @@
+<template name="item">
+  <view class='item'>
+    <image class="image"  data-id='{{id}}' data-indexx="{{index}}" catchtap='onXq' src="{{image}}" data-src="{{image}}" mode="widthFix"></image>
+    <view class='time-text'>{{description}}</view>
+    <view class='row rowvi'>
+      <view class='row row-wid'>
+        <text class='time-text-tr'>10/25</text>
+      </view>
+      <view class='row '>
+        <image class='time-shij' bindtap='del_caogao' data-id='{{id}}' src='/img/shch.png'></image>
+      </view>
+    </view>
+  </view>
+</template>

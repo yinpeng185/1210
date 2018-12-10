@@ -1,0 +1,71 @@
+/* pages/my/setup/aboutshai/clause/clause.wxss */
+
+page {
+  width: 100%;
+}
+
+.aufocolumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.auforow {
+  display: flex;
+  flex-direction: row;
+}
+
+.aufoxitiao {
+  height: 1rpx;
+  width: 100%;
+  background-color: #ccc;
+  /* background-color: red; */
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+/* 整体 */
+
+.ttidxh {
+  font-size: 30rpx;
+  color: #333;
+  font-weight: bold;
+}
+
+.bottom {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  width: 100%;
+  margin-top: 30rpx;
+}
+
+.whlloe {
+  width: 690rpx;
+  height: auto;
+  /* background-color: rebeccapurple; */
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+}
+
+.erliu {
+  font-size: 26rpx;
+  color: #333;
+  font-weight: bold;
+}
+
+.ersi {
+  font-size: 24rpx;
+  color: #4c4c4c;
+  text-indent: 24rpx;
+}
+
+.topsan {
+  padding-top: 30rpx;
+}
+
