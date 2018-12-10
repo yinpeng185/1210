@@ -1,0 +1,203 @@
+<nav-bar navbar-data='{{nvabarData}}'></nav-bar>
+<view class=' kkkkk' wx:if="{{look}}">
+  <view class='dcolumn'>
+    <canvas  canvas-id='myCanvas' hidden='{{cavhide}}' style="margin-top:1000rpx; width: {{phone_width}}px; height: {{phone_height}}px;" ></canvas>
+    <image src="{{imgurl}}" class='cavimg' hidden='{{imghide}}'  style='height:700rpx;' ></image>
+    <image class='fffdd'  bindtap='fffdd' src='/img/f.png' wx:if='{{look}}'></image>
+    <!-- margin-top:1000rpx;-->
+    <!-- <button class='savePicBtn mainColor_bg' bindtap='goHome' wx:if='{{look}}'>返回首页</button> -->
+    <button class='savePicBtn mainColor_bg home' bindtap='savePic' wx:if='{{look}}'>{{ononlo}}</button>
+  </view>
+</view>
+<view class='home-page' style='margin-top: {{height}}px'>
+</view>
+<view class='view-page'>
+  <view class='page-content' style='height:calc(100vh - {{navH}}px);'>
+    <!--这里放你的内容-->
+    <view class='fcolumnntainer paddingb'>
+      <view class='ffd'>
+        <view class='hhee' wx:for="{{guanzhuInfo}}" wx:key="key" wx:for-item='item'>
+          <view class='er'></view>
+          <view class='yi'>
+            <view class='l'>
+              <view class='frowcontainer'>
+                <image class='gutximg' src='{{item.r_image}}' catchtap='goto_home' data-id='{{item.user_id}}'></image>
+                <view class='fcolumnntainer errpx shm'>
+                  <text class='ftex' catchtap='goto_home' data-id='{{item.user_id}}'>{{item.home_uaer_name}}</text>
+                  <text class='xstext'>{{item.update_time}}</text>
+                </view>
+              </view>
+            </view>
+            <view class='r yizh' bindtap='showfx' data-idd='{{item.id}}' data-hname='{{item.home_uaer_name}}' data-rimg="{{item.r_image}}" data-img="{{item.image}}" data-dec='{{item.description}}'>
+              <image class='yuan' src='/images/follow/yuan.png'></image>
+            </view>
+          </view>
+          <!-- <view class='san'>
+            <view class='ztkg'>   
+
+              <text class="hs">{{item.description}} </text>
+              <text class="hss">
+              <text>#美食# </text>
+              <text>@阅读</text> 
+              </text>
+            </view>
+          </view> -->
+          <!-- nuh  nuhzt   hss zhk rightt coutent-all count-breif -->
+          <view class='nuh '>
+            <view class='nuhzt {{item.open?"content-all" :"content-breif"}}'>
+              <text class='hs '>{{item.description}} </text>
+              <!-- <text bindtap='jhao' class="hss" wx:key="index" hidden="{{details.at.length==0?true:false}}" wx:for="{{details.at}}" selectable='true' space='ensp' decode='true'>@{{item.nickName}} </text> -->
+              <!-- <text bindtap='asah' class="hss" selectable='true' space='ensp' decode='true' hidden="{{details.jinhao.length==0?true:false}}">#{{item.topic_title}}#</text> -->
+            </view>
+            <view class='zhk' catchtap='showAllAction' data-id='{{item.id}}'hidden="{{item.description.length>80?false:true}}">{{item.open?'收起':'全文'}}</view>
+          </view>
+
+
+
+          <view class='eer'>
+            <image class='dw' bindtap='previewImage' wx:for-index='imgIndex' data-index='{{imgIndex}}' data-faimg='{{item.image}}' wx:for="{{item.image}}" wx:key='key' wx:for-item="ite" data-src='{{ite}}' src='{{ite}}'></image>
+          </view>
+
+
+
+
+
+          <view class='textcity' bindtap='get_profit' data-img='{{item.image[0]}}' data-longitude='{{item.ypoint}}' data-address='{{item.address}}' data-name='{{item.addressname}}' data-latitude='{{item.xpoint}}' data-id="{{item.id}}">{{item.city}}•{{item.addressname}}</view>
+          <view class='xiaotiao2'></view>
+          <!-- {{hasChange}} -->
+
+          <view class='shiyi frowcontainer'>
+            <view class='shiyi-yi'>
+              <image class='dzdx' src="{{item.hasChange? '/images/follow/gd-img.png': '/images/follow/gd.png'}}" catchtap="onPostTap" data-dzid="{{item.id}}" data-indexx="{{index}}"></image>
+              <text class='szjk '> {{item.user_praise}} </text>
+            </view>
+
+            <view class='shiyi-er' catchtap='onShowCommentTap' data-userhid='{{item.user_id}}' data-id='{{item.id}}' data-shu='{{item.user_comment}}'>
+              <image class='dzdx' src='/images/follow/gpl-img.png' ></image>
+              <text class='szjk '> {{item.user_comment}} </text>
+            </view>
+
+            <view class='shiyi-san'>
+              <image class='dzdx ' src="{{item.hasChangesc? '/images/follow/gsc-img.png': '/images/follow/gsc.png'}}" catchtap="onPostTapc" data-dzid="{{item.id}}" data-indexx="{{index}}"></image>
+              <text class='szjk'> {{item.user_collection}} </text>
+            </view>
+
+
+          </view>
+
+
+
+
+
+        </view>
+      </view>
+
+
+      <view class='defx' wx:if='{{show_fenxiang}}'>
+        <view class='defxjd'>
+          <view class='deziti'>
+            分享到
+          </view>
+          <view class='frowcontainer dezimg'>
+            <view class='ss'>
+              <button class='buttonn' bindtap='share_open' open-type="share">
+                <image class='imdedx' src='/images/hnr/hxq/wxdup.png'></image>
+              </button>
+              <view class='imgzit'>微信好友</view>
+            </view>
+            <view class='ss'>
+              <button class='buttonn' bindtap='share'>
+                <image class='imdedx' src='/images/hnr/hxq/hb.png'></image>
+              </button>
+              <view class='imgzit'>生成海报</view>
+            </view>
+            <!-- <view class='ss'>
+              <button class='buttonn' bindtap='chshare'>
+                <image class='imdedx' src='/images/hnr/hxq/ct.png'></image>
+              </button>
+              <view class='imgzit'>生成长图</view>
+            </view> -->
+          </view>
+          <view class='quxtop'>
+            <view class='plxt'></view>
+            <view class='qux' bindtap='showfxqx'>
+              取消
+            </view>
+          </view>
+        </view>
+      </view>
+
+
+      <!-- <view class='djdzx' wx:if="{{pl}}">
+        <form report-submit='true' bindsubmit='send_form'>
+          <view class='xiaoch'></view>
+          <view class='frowcontainer ro1'>
+            <image class='imge2' src='{{avatarUrl}}'></image>
+            <textarea class='inp' auto-height placeholder='快来写下你的评论吧' bindinput='get_input' value='{{reply_content}}'></textarea>
+            <button class='button' hover-class="none" form-type='submit'>发送</button>
+          </view>
+        </form>
+      </view> -->
+
+    </view>
+
+    <!-- show:true,  -->
+    <view class='djdzx' wx:if="{{showpass}}">
+      <form report-submit='true' bindsubmit='send_form'>
+        <view class='xiaoch'></view>
+        <view class='auforow ro1'>
+          <image class='imge2' src='{{avatarUrl}}'></image>
+          <textarea class='inp' auto-height placeholder='快来写下你的评论吧' bindinput='get_input' value='{{reply_content}}'></textarea>
+          <button class='button' hover-class="none" form-type='submit'>发送</button>
+        </view>
+      </form>
+    </view>
+
+
+
+
+
+    <!-- 评论输入框
+    
+     <view class="floatBox" wx:if="{{show_comment}}">
+     <form report-submit='true' bindsubmit='send_form'>
+        <view class='drow hye'>
+          <view class='er'>
+            <image class='tttxxxdx' src='{{avatarUrl}}'></image>
+          </view>
+
+          <view class='over'>
+          <textarea class='klxxnd'   placeholder='' auto-height bindinput='get_value' value='{{reply_content}}' data-id="{{details.id}}"></textarea>
+          <text class='pla' wx:if="{{pla}}">快来写下你的评论吧</text>
+          </view>
+          <button class='button' hover-class="none" form-type='submit'>发送</button>
+        </view>
+      </form>
+    </view>
+     -->
+
+
+    <!-- <view class="pinglun-input">
+        <view class="flex f16">
+          <text class="sub">评论</text>
+          <text class="close tc grey" catchtap="onHideCommentTap">×</text>
+        </view>
+        <form report-submit="true" bindsubmit="onCommentSubmit">
+          <view class="input-box mt10">
+            <textarea name="content" focus="true" fixed="true" cursor-spacing="115" placeholder="{{comment_placeholder}}" placeholder-class="linght" />
+          </view>
+          <view class="flex mt10">
+            <view class="sub linght f12">
+              <text class="mr5 iconfont icon-wran"></text>请遵循用户协议</view>
+            <button class="send-btn f16" type="primary" form-type="submit">发送</button>
+          </view>
+        </form>
+      </view>
+      <view class="floatBox floatBoxBg" style="display:block;" catchtap="onHideCommentTap"></view> -->
+
+
+
+
+
+  </view>
+</view>
