@@ -1,0 +1,129 @@
+<nav-bar navbar-data='{{nvabarData}}'>
+</nav-bar>
+<view class='home-page' style='margin-top: {{height}}px'>
+  <view class='view-page'>
+
+    <!--这里放你的内容-->
+    <view class='aufocolumn'>
+      <view class='aufoxitiao topyi'></view>
+      <form bindsubmit="bindFormSubmit" enctype="multipart/form-data">
+        <view class='whole'>
+          <view class='wholeer'>
+            <view class="textarea-wrp">
+              <textarea type='text' name='description' placeholder="请输入您想输入的文字" value='{{username}}' confirm-type='search' focus="{{autoFocus}}" bindfocus="activeFocus" bindinput='get_user_input' bindblur="resignblur" maxlength="{{max}}"></textarea>
+
+            </view>
+            <view class='pp'>
+              <view class='ajj'>
+                <view class='auforow left pp'>
+                  <view class='aa' bindtap='grie'>
+                    <image class='sju' src='/img/jj.png'></image>
+                    话题</view>
+                  <view class='aa er' bindtap='aa'>
+                    <image class='sju' src='/img/aaa.png'></image>
+                    用户</view>
+                </view>
+                <view class='zt right'>
+                  {{currentWordNumber|0}}/{{max}}
+                </view>
+
+              </view>
+
+              <view class='scroll-lan'>
+                <scroll-view scroll-x class="scroll-view_H">
+                  <view class='image' style='border: 1rpx dashed #fff;' wx:for="{{pics}}" wx:key="" wx:for-item="image" data-id='{{index}}'>
+                    <image class='img-img' src='{{image}}' mode="aspectFill" data-src="{{image}}" bindtap="previewImage"></image>
+                    <text class="image-close" catchtap="onDeleteImgTap" data-index="{{index}}"></text>
+                  </view>
+                  <view class='image' wx:if="{{pics.length<9}}" bindtap="onChooseUploadImageTap">
+                    <view class="image-plus"></view>
+                  </view>
+                </scroll-view>
+              </view>
+            </view>
+          </view>
+          <view class='hhue'>
+            <view class='select_box left' catchtap='selectTaprrr'>
+              <image class='flllimg left' src='/images/add/fenlei.png'></image>
+              <view name='{{id}}' value='{{id}}'>
+                <text> {{name?name:'选择分类'}}</text>
+              </view>
+            </view>
+            <button formType="submit" class='tjbc right'>
+              发布
+            </button>
+            <button formType="submit" data-hid='45' class='tjbccg right shwu'>
+              存草稿
+            </button>
+          </view>
+        </view>
+      </form>
+      <view class='infodxt'></view>
+      <view class='adding' bindtap='onGetMapLocationTap'>
+        <!-- <view class='left auforow'>
+          <image class='dwimg' src='/images/add/dw.png'></image>
+          <view class='terr'>哈哈路6号</view>
+        </view> -->
+        <view class='auforow left  dd' bindtap='onGetMapLocationTap'>
+          <image class='dwimg' src='/images/add/dw.png'></image>
+          <view class='erbxa'>{{addressname}}</view>
+        </view>
+        <view class='right' bindtap='onGetMapLocationTap'>
+          <image class='jtimgdx ' src='/images/news/jt.png'></image>
+        </view>
+      </view>
+      <view class='shuxx'></view>
+      <!-- <view class='tees'>
+        您可能想查看
+      </view>
+
+      <view class='shuxx'></view> -->
+      <!-- <view class=''>
+        <view class='hoyy'>
+          <view class='auforow ee left'>
+            <image class='jaiimg' src='/images/add/jai.png'></image>
+            <view class='ter'>{{addressname?addressname:'地址'}}</view>
+          </view>
+          <view class='auforow ee right'>
+            <image class='dwimg' src='/images/add/dw.png'></image>
+            <view class='terr'>点击详情</view>
+            <view class='xt'></view>
+            <view class='terr'>1.2KM</view>
+          </view>
+        </view>
+        <view class='shuxx'></view>
+
+
+        <view class='hoyy'>
+          <view class='auforow ee left'>
+            <image class='jaiimg' src='/images/add/jai.png'></image>
+            <view class='ter'>酒店</view>
+          </view>
+          <view class='auforow ee right'>
+            <image class='dwimg' src='/images/add/dw.png'></image>
+            <view class='terr'>哈哈路6号</view>
+            <view class='xt'></view>
+            <view class='terr'>1.2KM</view>
+          </view>
+        </view>
+        <view class='shuxx'></view>
+        <view class='hoyy'>
+          <view class='auforow ee left'>
+            <image class='jaiimg' src='/images/add/jai.png'></image>
+            <view class='ter'>酒店</view>
+          </view>
+          <view class='auforow ee right'>
+            <image class='dwimg' src='/images/add/dw.png'></image>
+            <view class='terr'>哈哈路6号</view>
+            <view class='xt'></view>
+            <view class='terr'>1.2KM</view>
+          </view>
+        </view>
+        <view class='shuxx'></view>
+      </view> -->
+
+      <view class='fb' bindtap='fbon'>发布规则</view>
+
+    </view>
+  </view>
+</view>

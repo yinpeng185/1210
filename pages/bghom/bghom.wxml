@@ -1,0 +1,121 @@
+<!--pages/my/setup/homepage/homepage.wxml-->
+<view class='infoxitiao'></view>
+<view class='whoeell'>
+  <image class='dtimg' src='/images/my/tx.png'></image>
+  <view class='infocolumn right'>
+    <view>
+      <view class='inforow'>
+        <view class='infocolumn widthshuw yishiyi'>
+          <view class='shzzt'>0</view>
+          <view class='wpzt'>获赞</view>
+        </view>
+
+        <view class='infocolumn widthshuw yishiyi'>
+          <view class='shzzt'>1900</view>
+          <view class='wpzt'>关注</view>
+        </view>
+
+        <view class='infocolumn widthshuw yishiyi'>
+          <view class='shzzt'>8</view>
+          <view class='wpzt'>粉丝</view>
+        </view>
+      </view>
+      <view class='inforow right topsh'>
+        <view class='gzh righthh'>
+          <image class='imgshi' src='/images/my/homepage/jai.png'></image>
+          关注
+        </view>
+        <view class='kg'  bindtap='bindKg'>
+          <image class='imgkg' src="{{showMaltose? '/images/my/homepage/shl.png': '/images/my/homepage/shl-x.png'}}"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+<view class='col' hidden="{{showMaltose}}">
+  <view class='toplr'>
+    <view class='ztdzer left'>你可能感兴趣</view>
+    <image class='imgpljt right' src='/images/news/jt.png'></image>
+    <view class='ztdzer right'>查看更多</view>
+  </view>
+  <view class='scroll-lan'>
+    <scroll-view scroll-x class="scroll-view_H">
+      <view class='gzhsan'>
+        <image class='de' src='/images/my/homepage/de.png'></image>
+        <image class='diufang' src='/images/my/tx.png'></image>
+        <view class='name'>奔跑的猪</view>
+        <view class='titel'>健身达人</view>
+        <view class='guerer'>
+          <view class='gzher'>
+            <image class='imgshi' src='/images/my/homepage/jai.png'></image>
+            关注
+          </view>
+        </view>
+      </view>
+      <view class='gzhsan'>
+        <image class='de' src='/images/my/homepage/de.png'></image>
+        <image class='diufang' src='/images/my/tx.png'></image>
+        <view class='name'>奔跑的猪</view>
+        <view class='titel'>健身达人</view>
+        <view class='guerer'>
+          <view class='gzher'>
+            <image class='imgshi' src='/images/my/homepage/jai.png'></image>
+            关注
+          </view>
+        </view>
+      </view>
+      <view class='gzhsan'>
+        <image class='de' src='/images/my/homepage/de.png'></image>
+        <image class='diufang' src='/images/my/tx.png'></image>
+        <view class='name'>奔跑的猪</view>
+        <view class='titel'>健身达人</view>
+        <view class='guerer'>
+          <view class='gzher'>
+            <image class='imgshi' src='/images/my/homepage/jai.png'></image>
+            关注
+          </view>
+        </view>
+      </view>
+      <view class='gzhsan'>
+        <image class='de' src='/images/my/homepage/de.png'></image>
+        <image class='diufang' src='/images/my/tx.png'></image>
+        <view class='name'>奔跑的猪</view>
+        <view class='titel'>健身达人</view>
+        <view class='guerer'>
+          <view class='gzher'>
+            <image class='imgshi' src='/images/my/homepage/jai.png'></image>
+            关注
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>
+
+
+<view class='serpl'>
+  <view class='ztsan left'>奔跑的佩奇</view>
+  <image class='imgxb left' src='/images/my/xb.png'></image>
+  <view class='gzhsi left'>上海</view>
+</view>
+<view class='ersi'>明星摄影师/时尚生活家/色彩管理与形象设计师/</view>
+<view class='vv'>
+  <view class='xiaoz left'>
+    <view class='fxx e4oo7f'>Ta的分享</view>
+    <view class='xiao' style='background-color: #e4007f;'></view>
+  </view>
+  <view class='hx left'></view>
+  <view class='xiaoz right'>
+    <view class='fxx j9'>Ta的收藏</view>
+    <view class='xiao' style='background-color: red;'></view>
+  </view>
+</view>
+
+<view class='qs'>
+  <image class='ximhao' src='/images/my/fx.png'></image>
+  <image class='ximhao' src='/images/my/fx.png'></image>
+  <image class='ximhao' src='/images/my/fx.png'></image>
+  <image class='ximhao' src='/images/my/fx.png'></image>
+</view>

@@ -1,0 +1,152 @@
+<!--pages/add/grie/grie.wxml-->
+<view class='view-page'>
+  <navbar page-name="选择话题"></navbar>
+  <view class='page-content ' style='height:calc(100vh - {{navH}}px);top:{{navH}}px'>
+
+
+    <view class='hy'>
+      <view class='fcolumnntainer ysb'>
+        <view class='fhh'>
+          <view class='fss '>
+            <view class='frowcontainer hl'>
+              <view>
+                <image class='fimgdx' src='/images/follow/uu.png'></image>
+              </view>
+              <input class='fssrn hl' placeholder='请搜索话题' bindinput="bindKeyInput"></input>
+            </view>
+          </view>
+        </view>
+
+        <view class='hh'>
+          <view class='lshi left'>{{search_state}}</view>
+          <view class='erj right' bindtap='clear_record'>
+            清除
+          </view>
+        </view>
+        <view class='ann'>
+          <view class='ms' bindtap='add_topic_to_list' wx:if="{{jg==='false'||jg==='init'}}" wx:for="{{article_list}}" wx:key="item" data-article_id='{{item.id}}' data-article_title='{{item.topic_title}}'>{{item.topic_title}}</view>
+          <view class='ms' wx:if="{{jg==='true'}}" bindtap='create_topic'>创建新话题 : {{value}}</view>
+        </view>
+
+        <view class='fee' wx:if="{{jg==='init'}}">
+        <view class='hu-s'>
+          <view class='erl3'>热门搜索</view>
+          <view class='annn'>
+            <view class='mss' wx:if="{{jg==='init'}}" wx:for="{{hot_article_list}}" wx:key='item' data-article_title='{{item.topic_title}}' data-article_id='{{item.id}}' bindtap='add_topic_to_list'>
+              <image class='imds' wx:if="{{item.is_hot}}" src='/images/follow/rm.png'></image>{{item.topic_title}}
+            </view>
+          </view>
+        </view>
+        </view>
+      </view>
+    </view>
+    
+
+     <!-- <view class='hy'>
+      <view class='fcolumnntainer ysb'>
+        <view class='fhh'>
+          <view class='fss '>
+            <view class='frowcontainer hl'>
+              <view>
+                <image class='fimgdx' src='/images/follow/uu.png'></image>
+              </view>
+              <input class='fssrn hl' placeholder='请搜索话题' bindinput="bindKeyInput"></input>
+            </view>
+          </view>
+        </view>
+
+        <!-- /搜索结果 -->
+        <!-- <view class='fcolumnntainer'>
+          <view class='hh'>
+            <view class='lshi left'>{{jg?'搜索结果':'没有搜索到相关话题'}}</view>
+          </view>
+          <view class='ann'>
+            <view class='ms' wx:if="{{jg}}">是的</view>
+            <view class='ms' wx:else>创建新话题: 是的</view>
+          </view>
+        </view>
+
+
+
+      </view>
+    </view> -->
+
+
+
+
+    <!-- <view class='hy'>
+      <view class='fcolumnntainer ysb'>
+        <view class='fhh'>
+          <view class='fss '>
+            <view class='frowcontainer hl'>
+              <view>
+                <image class='fimgdx' src='/images/follow/uu.png'></image>
+              </view>
+              <input class='fssrn hl' placeholder='请搜索话题' bindinput="bindKeyInput"></input>
+            </view>
+          </view>
+        </view>
+
+        <view class='hh'>
+          <view class='lshi left'>历史记录</view>
+          <view class='erj right'>
+            清除
+          </view>
+        </view>
+        <view class='ann'>
+          <view class='ms'>是的</view>
+          <view class='ms'>是的</view>
+          <view class='ms'>是的</view>
+          <view class='ms'>是的</view>
+          <view class='ms'>是的</view>
+          <view class='ms'>是的</view>
+          <view class='ms'>是的</view>
+          <view class='ms'>是的</view>
+          <view class='ms'>是的</view>
+        </view>
+
+        <view class='fee'></view>
+        <view class='hu-s'>
+          <view class='erl3'>热门搜索</view>
+
+          <view class='annn'>
+            <view class='mss'>
+              <image class='imds' src='/images/follow/rm.png'></image>是的
+            </view>
+
+            <view class='mss'>
+              <image class='imds' src='/images/follow/rm.png'></image>是的
+            </view>
+            <view class='mss'>
+              <image class='imds' src='/images/follow/rm.png'></image>是的
+            </view>
+            <view class='mss'>
+              <image class='imds' wx:if="{{u}}" src='/images/follow/rm.png'></image>是的
+            </view>
+            <view class='mss'>
+              <image class='imds' wx:if="{{u}}" src='/images/follow/rm.png'></image>是的
+            </view>
+            <view class='mss'>
+              <image class='imds' wx:if="{{u}}" src='/images/follow/rm.png'></image>是的
+            </view>
+            <view class='mss'>
+              <image class='imds' wx:if="{{u}}" src='/images/follow/rm.png'></image>是的
+            </view>
+            <view class='mss'>
+              <image class='imds' wx:if="{{u}}" src='/images/follow/rm.png'></image>是的
+            </view>
+            <view class='mss'>
+              <image class='imds' wx:if="{{u}}" src='/images/follow/rm.png'></image>是的
+            </view>
+            <view class='mss'>
+              <image class='imds' wx:if="{{u}}" src='/images/follow/rm.png'></image>是的
+            </view>
+          </view>
+        </view>
+      </view>
+    </view> -->
+
+
+
+  </view>
+</view>

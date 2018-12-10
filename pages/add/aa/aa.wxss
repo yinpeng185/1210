@@ -1,0 +1,230 @@
+/* pages/add/grie/grie.wxss */
+
+page {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.view-page {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+  position: absolute;
+  overflow: hidden;
+}
+
+.page-content {
+  box-sizing: border-box;
+  position: relative;
+  overflow-y: auto;
+}
+
+.fcolumnntainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.frowcontainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.fhh {
+  height: 60rpx;
+  width: 100%;
+}
+
+.hh {
+
+  margin: 30rpx 50rpx 20rpx 30rpx;
+}
+
+.dax {
+  height: 20rpx;
+  width: 100%;
+  background-color: #f1f4f6;
+}
+
+.aa {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+}
+
+.ss {
+  font-size: 30rpx;
+  color: #333;
+}
+
+.xxdd {
+  width: 620rpx;
+  height: 1rpx;
+  background-color: #f1f4f6;
+  /* background-color: red; */
+}
+
+.tfe {
+
+  margin: 20rpx 0 0 20rpx;
+}
+
+.sso {
+  margin: 40rpx 0 0 20rpx;
+}
+
+.xx {
+  margin-top: 18rpx;
+}
+
+.ssss {
+  margin-bottom: 20rpx;
+}
+
+.fss {
+  width: 690rpx;
+  height: 60rpx;
+  background-color: #f4f4f4;
+  border: 0px solid #f2f2f2f2;
+  border-radius: 32rpx;
+
+  margin: 0 30rpx 0 30rpx;
+}
+
+.hl {
+  height: 60rpx;
+  line-height: 60rpx;
+}
+
+.fssrn {
+  font-size: 30rpx;
+  color: #999;
+  padding-left: 15rpx;
+}
+
+input {
+  /* background-color: red; */
+  width: 625rpx;
+}
+
+.fimgdx {
+  width: 27rpx;
+  height: 27rpx;
+  padding-left: 20rpx;
+}
+
+.imds {
+  width: 18rpx;
+  height: 24rpx;
+  margin-right: 10rpx;
+}
+
+.t3er {
+  font-size: 26rpx;
+  color: #333;
+  margin-left: 20rpx;
+}
+
+.ssi {
+  height: 34rpx;
+  /* background-color: rebeccapurple; */
+
+  margin: 30rpx 90rpx 0 30rpx;
+  width: 630rpx;
+}
+
+.ann {
+  height: auto;
+  /* width: 630rpx; */
+
+  margin: 10rpx 90rpx 30rpx 10rpx;
+}
+
+.ms {
+  background-color: #f1f4f6;
+  width: auto;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  border: 0rpx solid #f1f4f6;
+  border-radius: 30rpx;
+  font-size: 26rpx;
+  color: #4c4c4c;
+  display: inline-block;
+  padding-left: 25rpx;
+  padding-right: 25rpx;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+}
+
+.he {
+  margin-left: 40rpx;
+}
+
+/* 修改 */
+
+.lshi {
+  font-size: 26rpx;
+  color: #333;
+}
+
+.erj {
+  font-size: 20rpx;
+  color: #999;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.hy {
+  /* background-color: #f1f4f6; */
+  height: 100%;
+}
+
+.ysb {
+  background-color: #fff;
+}
+
+.fee {
+  background-color: #f1f4f6;
+  height: 10rpx;
+}
+
+.erl3 {
+  font-size: 26rpx;
+  color: #333;
+  margin-left: 20rpx;
+}
+
+.hu-s {
+
+  margin: 30rpx 90rpx 30rpx 10rpx;
+}
+
+.annn {
+  height: auto;
+}
+
+.mss {
+  background-color: #f1f4f6;
+  width: auto;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  border: 0rpx solid #f1f4f6;
+  border-radius: 30rpx;
+  font-size: 26rpx;
+  color: #4c4c4c;
+  display: inline-block;
+
+  padding:0 25rpx 0 25rpx; 
+  margin: 20rpx 0 0 20rpx;
+}

@@ -1,0 +1,43 @@
+<!--pages/add/img/img.wxml-->
+  <swiper  bindscrolltoupper="listenSwiper" class='deimgda'>
+    <swiper-item wx:for="{{pics}}" wx:for-item="image" data-id='{{index}}'>
+      <!-- <image class='deimgda' src="{{image}}" bindtap='onImg' /> -->
+       <image src="{{image}}" bindload="imageLoad"  data-id='{{index}}' style="width:{{picss[index].width }}rpx; height:{{ picss[index].height }}rpx;" mode='widthFix'></image>
+      <view class='bqwz'>
+        <view class='bq'>#皇家精品西式甜点</view>
+      </view>
+      <view class='bqwz' style='top:  -520rpx;'>
+        <view class='bq'>#美食攻略</view>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <image class='deimgda' src="/images/hnr/hxq/dt.png" />
+      <view class='bqwz'>
+        <view class='bq'>#中国甜点</view>
+      </view>
+      <view class='bqwz' style='top:  -520rpx;'>
+        <view class='bq'>#情景攻略</view>
+      </view>
+    </swiper-item>
+  </swiper>
+  <view class='fximg '>
+    <view class='yshu left'>
+      <view class='fxztdx fshu'>1/{{pics.length}}</view>
+    </view>
+  </view>
+
+
+<view class='con'>
+  <view class='xx'>
+    添加标签以提高辨识度(#)
+  </view>
+  <view class='tx'>(单击添加/长按删除)</view>
+  <view class='hone rightt'>
+    <view class='tx left'>下一步</view>
+    <image class='jtimgdx left' src='/images/news/jt.png'></image>
+  </view>
+</view>
+
+<!-- <image style="transform:translate({{item.offsetX}}px,{{item.offsetY}}px);" class="img" id="{{stv.id[index]}}"   src="../../images/location_red.png" bindtap="onBind"></image>  -->
+
+   <!-- <image class='deimgda' src="/images/hnr/hxq/dt.png" /> -->

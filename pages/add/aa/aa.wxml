@@ -1,0 +1,66 @@
+<view class='view-page'>
+  <navbar page-name="选择@用户"></navbar>
+  <view class='page-content ' style='height:calc(100vh - {{navH}}px);top:{{navH}}px'>
+    <view class='hy'>
+      <view class='fcolumnntainer ysb'>
+        <view class='fhh'>
+          <view class='fss '>
+            <view class='frowcontainer hl'>
+              <view>
+                <image class='fimgdx' src='/images/follow/uu.png'></image>
+              </view>
+              <input class='fssrn hl' focus='true' placeholder='请搜索话题' bindinput="bindKeyInput"></input>
+            </view>
+          </view>
+        </view>
+
+
+        <view class='hh'>
+          <view class='lshi'>{{hhu?'最近联系人':'搜索结果'}}</view>
+        </view>
+        <view class='dax'></view>
+        <view bindtap='add_user_to_list' class='frowcontainer ssss' wx:for="{{user_list}}" wx:key="item" data-user_name='{{item.nickName}}' data-user_id='{{item.id}}'>
+          <image class='aa tfe' src="{{item.avatarUrl}}"></image>
+          <view class='fcolumnntainer sso'>
+            <view class='ss'>{{item.nickName}}
+            </view>
+            <view class='xxdd xx'></view>
+          </view>
+        </view>
+        <view bindtap='add_user_to_list' class='frowcontainer ssss' wx:if="{{hhu}}" wx:for="{{user_fans}}" wx:key="item" data-user_name='{{item.nickName}}' data-user_id='{{item.id}}'>
+          <image class='aa tfe' src="{{item.avatarUrl}}"></image>
+          <view class='fcolumnntainer sso'>
+            <view class='ss'>{{item.nickName}}
+            </view>
+            <view class='xxdd xx'></view>
+          </view>
+        </view>
+        <view class='hh'>
+          <view class='lshi'>你的关注</view>
+        </view>
+        <view class='dax'></view>
+        <!-- <view bindtap='add_user_to_list' class='frowcontainer ssss' wx:for="{{user_list}}" wx:key="item" data-user_name='{{item.nickName}}' data-user_id='{{item.id}}'>
+          <image class='aa tfe' src="{{item.avatarUrl}}"></image>
+          <view class='fcolumnntainer sso'>
+            <view class='ss'>{{item.nickName}}
+            </view>
+            <view class='xxdd xx'></view>
+          </view>
+        </view> -->
+        <view bindtap='add_user_to_list' class='frowcontainer ssss' wx:if="{{hhu}}" wx:for="{{user_fans}}" wx:key="item" data-user_name='{{item.nickName}}' data-user_id='{{item.id}}'>
+          <image class='aa tfe' src="{{item.avatarUrl}}"></image>
+          <view class='fcolumnntainer sso'>
+            <view class='ss'>{{item.nickName}}
+            </view>
+            <view class='xxdd xx'></view>
+          </view>
+        </view>
+
+      </view>
+    </view>
+
+
+
+
+  </view>
+</view>

@@ -1,0 +1,38 @@
+<!--pages/my/wallet/gz/gz.wxml-->
+<view class='view-page'>
+  <navbar page-name="发布规则"></navbar>
+  <view class='page-content' style='height:calc(100vh - {{navH}}px);top:{{navH}}px'>
+    <view class='infoxitiao bd' style='top:{{navH}}px'></view>
+         <view class='aufocolumn'>
+
+      <view class='bottom'>
+        <view class='ttidxh'>发布规则</view>
+      </view>
+
+
+      <view class='whlloe'>
+        <view class='erliu topsan'>一、晒一下主要发布的是哪些内容</view>
+        <view class='ersi topsan'>用户发布的内容对于其它用户都有一个消费参考价值，即线下各个消费场所包括但不仅限于，吃、住、行、游、娱乐、购、运动、展览、景色等，一篇内容里面都代表着对一个地址或者一个线下商家的描述；</view>
+                <view class='erliu topsan'>二、如何判断内容是否有效</view>
+        <view class='ersi topsan'>用户所发布的内容与下方定位的地址必须一致，否则视为无效，官方有权删除内容或者禁止提现；</view>
+            <view class='erliu topsan'>三、哪些内容是禁止发布的</view>
+        <view class='ersi topsan'>用户禁止发布营销类内容，或者在内容上面发布自己的联系方式，如遇此情况，官方有权进行删除、拉黑等处理，其它不允许情况请参照《晒一下社区规范》</view>
+            <view class='erliu topsan'>四、如何获取高曝光率？</view>
+        <view class='ersi topsan'>晒一下官方对于优质内容会进行推荐，增加曝光率。首先图片要足够美观、清晰，内容要描述足够清楚，最后定位的地址或者商家名称和内容所表述的一致。</view>
+            <!-- <view class='erliu topsan'>五、如何获取收益？</view>
+        <view class='ersi topsan'>晒一下是一个可以赚钱的分享社区，即用户点击晒晒详情里面的相关商家名称或者地址时，发布此篇晒晒作者，即可获取相应的收益，收益是按照点击率收费的，即根据作者发布内容的优质程度，每次点击获取的收益是0.1元-3元不等，所以请用心写你们的晒晒哦！</view> -->
+            <view class='erliu topsan'>五、为什么要选择分类</view>
+        <view class='ersi topsan'>为了满足其它用户的浏览需求以及推荐的精准度，请准确选择分类，分类不规范的，晒一下官方有权不予上线或者删除，如果不选择分类，发布的内容将无法上传。</view>
+            <view class='erliu topsan'>六、#，@功能代表什么？</view>
+        <view class='ersi topsan'>#代表话题，用户可以根据自己发布的晒晒选择现有的话题，也可以自行创建话题，增加话题性可以提高曝光率。@代表提醒其它用户浏览，可以是自己已经关注的好友，也可以是其它用户，这也是一种增加浏览量的一种方式。</view>
+                
+      </view>
+    </view>
+
+
+
+
+
+
+  </view>
+</view>

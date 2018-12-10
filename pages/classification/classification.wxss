@@ -1,0 +1,71 @@
+/* pages/classification/classification.wxss */
+
+page {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.view-page {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+  position: absolute;
+  overflow: hidden;
+}
+
+.page-content {
+  box-sizing: border-box;
+  position: relative;
+  overflow-y: auto;
+}
+
+.fcolumnntainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.frowcontainer {
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+
+
+
+.ann {
+  height: auto;
+  width: 630rpx;
+  /* background-color: rebeccapurple; */
+  margin-top: 10rpx;
+  margin-left: 30rpx;
+  margin-right: 90rpx;
+}
+
+.ms {
+  background-color: #f1f4f6;
+  width: auto;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  border: 0rpx solid #f1f4f6;
+  border-radius: 30rpx;
+  font-size: 26rpx;
+  color: #4c4c4c;
+  padding-left: 25rpx;
+  padding-right: 25rpx;
+  display: inline-block;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+}
+
+.hhh{
+  height: 1rpx;
+  width: 100%;
+  background-color: #cccccc;
+}

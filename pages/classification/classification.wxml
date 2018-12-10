@@ -1,0 +1,11 @@
+<nav-bar navbar-data='{{nvabarData}}'></nav-bar>
+<view class='home-page' style='margin-top: {{height}}px'>
+<view class='view-page'>
+ 
+    <view class='hhh'></view>
+
+    <view class='ann'>
+      <view class='ms' wx:for="{{category}}"wx:key="key" bindtap='bqOn' data-id='{{item.id}}' data-name='{{item.name}}' >{{item.name}}</view>
+    </view>
+  </view>
+</view>
