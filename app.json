@@ -1,0 +1,99 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/index/details/index",
+    "pages/navbar/index",
+    "pages/navbar/icon/index",
+    "pages/public/public",
+    "pages/follow/follow",
+    "pages/index/ss/index",
+    "pages/add/add",
+    "pages/news/news",
+    "pages/my/share/index",
+    "pages/index/details/chshare/index",
+    "pages/bghom/bghom",
+    "pages/index/switchcity/switchcity",
+    "pages/index/details/share/index",
+    "pages/classification/classification",
+    "pages/my/my",
+    "pages/topicdetails/topicdetails",
+    "pages/comment/comment",
+    "pages/index/detail/index",
+    "pages/my/setup/homefans/fans",
+    "pages/my/wallet/record/record",
+    "pages/my/wallet/wallet",
+    "pages/my/setup/draft/draft",
+    "pages/my/setup/information/information",
+    "pages/my/setup/mypraise/mypraise",
+    "pages/my/setup/setup",
+    "pages/my/setup/aboutshai/aboutshai",
+    "pages/my/setup/opinion/opinion",
+    "pages/my/setup/opinion/problem/problem",
+    "pages/my/setup/privacy/privacy",
+    "pages/my/setup/news/news",
+    "pages/my/setup/shopcoo/shopcoo",
+    "pages/my/setup/information/province/province",
+    "pages/my/setup/information/city/city",
+    "pages/my/setup/information/location/location",
+    "pages/my/setup/information/sex/sex",
+    "pages/my/setup/information/nickname/nickname",
+    "pages/my/setup/information/autograph/autograph",
+    "pages/my/setup/aboutshai/standard/standard",
+    "pages/my/setup/aboutshai/privacy/privacy",
+    "pages/my/setup/aboutshai/clause/clause",
+    "pages/news/notice/notice",
+    "pages/news/fans/fans",
+    "pages/news/woa/woa",
+    "pages/news/fabulous/fabulous",
+    "pages/news/comment/comment",
+    "pages/news/collection/collection",
+    "pages/my/setup/homepage/homepage",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "color": "#666666",
+    "selectedColor": "#d70051",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "light",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/icon/home_icon.png",
+        "selectedIconPath": "images/icon/home.png"
+      },
+      {
+        "pagePath": "pages/follow/follow",
+        "text": "关注",
+        "iconPath": "images/icon/follow_icon.png",
+        "selectedIconPath": "images/icon/follow.png"
+      },
+      {
+        "pagePath": "pages/add/add",
+        "iconPath": "images/icon/add.png",
+        "text": "发布",
+        "selectedIconPath": "images/icon/add.png"
+      },
+      {
+        "pagePath": "pages/news/news",
+        "text": "消息",
+        "iconPath": "images/icon/news.png",
+        "selectedIconPath": "images/icon/news_icon.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "images/icon/my.png",
+        "selectedIconPath": "images/icon/my_icon.png"
+      }
+    ]
+  }
+}
