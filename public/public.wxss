@@ -1,0 +1,116 @@
+/* pages/dd/dd.wxss */
+
+.img_item {
+  width: 48%;
+  margin: 1%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.hh {
+  margin-right: 5rpx;
+  margin-left: 5rpx;
+  width: 100%;
+  /* width: 46.5%;
+  margin: 1%;
+  display: inline-block;
+  vertical-align: top; */
+}
+
+button::after {
+  border: 0;
+}
+
+button {
+  position: relative;
+  display: block;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+  box-sizing: border-box;
+  font-size: 24rpx;
+  text-align: left;
+  text-decoration: none;
+  line-height: 40rpx;
+  border-radius: 0;
+  border: none;
+  -webkit-tap-highlight-color: transparent;
+  overflow: hidden;
+  color: #000;
+  background-color: #fff;
+  margin-top: 35rpx;
+}
+
+.neitex {
+  font-size: 28rpx;
+  color: #333;
+  /*超出一行文字自动隐藏 */
+  overflow: hidden;
+  /*文字隐藏后添加省略号 */
+  text-overflow: ellipsis;
+  /*强制不换行 */
+  white-space: nowrap;
+  margin-top: 0rpx;
+  margin-left: 10rpx;
+  /* background-color: rebeccapurple; */
+}
+
+.wusi {
+  width: 54rpx;
+  height: 54rpx;
+  border-radius: 50%;
+  margin-right: 5rpx;
+}
+
+.ersilu {
+  font-size: 24rpx;
+  color: #666;
+
+}
+
+.wu{
+  border-radius: 14rpx;
+}
+.shij {
+  width: 19rpx;
+  height: 23rpx;
+  margin-top: 15rpx;
+}
+
+.r {
+  float: right;
+}
+
+.l {
+  float: left;
+}
+
+.hcolumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.hrow {
+  display: flex;
+  flex-direction: row;
+}
+
+.huy {
+  /* background-color: rebeccapurple; */
+  height: 54rpx;
+  line-height: 54rpx;
+  margin-top: 5rpx;
+}
+
+.hhuy {
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+  /* background-color: red; */
+  height: 54rpx;
+  margin-top: 15rpx;
+}
+.shi{
+  width: 10rpx;
+}
+

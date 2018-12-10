@@ -1,0 +1,87 @@
+<!--pages/dd/dd.wxml-->
+<template name="doc-list">
+  <view style="display:none">
+    <image wx:for="{{newsList}}" wx:key="id" id="{{item.id}}" src="{{item.image}}" bindload="onGetimg"></image>
+  </view>
+  <scroll-view scroll-y="true" style="height:500px;" bindscrolltolower="lower" data-lastid="{{lastid}}">
+    <view style="width:100%;margin:0 auto;">
+      <view class="img_item">
+        <view wx:for="{{col1}}"  wx:key="id" catchtap="onXq" data-xqid="{{item.id}}">
+          <image src="{{item.image}}" class='wu' style="width:100%;height:{{item.height}}px"></image>
+          <view class='neitex'>{{item.description}}</view>
+          <view class='hhuy'>
+            <view class='hrow l huy'>
+              <image class='wusi' src='{{item.r_image}}'></image>
+              <view class='shi'></view>
+              <view class='ersilu'>{{item.home_uaer_name}}</view>
+            </view>
+            <view class='hrow r huy'>
+              <image class='shij' src='/images/hnr/nrdz.png' wx:if="{{haschange==true?'true':''}}" data-dzid="{{item.id}}" catchtap="onPostTap"></image>
+              <image class='shij' src='/images/hnr/hxq/dzsh.png' wx:else data-dzid="{{item.id}}" catchtap="onPostTap"></image>
+              <view class='shi'></view>
+              <view class='ersilu'>{{item.user_praise}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="img_item">
+        <view wx:for="{{col2}}" wx:key="id" catchtap="onXq" data-xqid="{{item.id}}">
+          <image src="{{item.image}}" class='wu' style="width:100%;height:{{item.height}}px"></image>
+          <view class='neitex'>{{item.description}}</view>
+          <view class='hhuy'>
+            <view class='hrow l huy'>
+              <image class='wusi' src='{{item.r_image}}'></image>
+              <view class='shi'></view>
+              <view class='ersilu'>{{item.home_uaer_name}}</view>
+            </view>
+            <!-- <view class='hrow r huy'>
+              <image class='shij' src='/images/hnr/nrdz.png'   wx:if="{{hid==item.id?'true':''}}" catchtap="onPostTap" data-dzid="{{item.id}}"></image>
+              <image class='shij' src='/images/hnr/hxq/dzsh.png' wx:else catchtap="onPostTap" data-dzid="{{item.id}}"></image>
+              <view class='shi'></view>
+              <view class='ersilu'>{{item.praise}}</view>
+            </view> -->
+
+          <view class='hrow r huy'   wx:if="{{hid==item.id?'true':''}}">
+              <image class='shij' src='/images/hnr/nrdz.png' data-dzid="{{item.id}}" catchtap="bindlike"></image>
+              <!-- <image class='shij' src='/images/hnr/hxq/dzsh.png' wx:else  data-dzid="{{item.id}}"></image> -->
+              <view class='shi'></view>
+              <view class='ersilu'>{{item.praise}}</view>
+            </view>
+
+            <view class='hrow r huy'  catchtap="onPostTap" wx:else>
+              <!-- <image class='shij' src='/images/hnr/nrdz.png'  style='hidden:block;'  data-dzid="{{item.id}}"></image> -->
+              <image class='shij' src='/images/hnr/hxq/dzsh.png'  data-dzid="{{item.id}}" catchtap="onPostTap"></image>
+              <text>{{tiem.praice}}</text>
+              <view class='ersilu'>{{item.user_praise}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</template>
+
+   <!-- <view class='right_img' bindtap='showList' style='display:{{right_arrow}}'>
+      <image src="/images/right.png" style="width:32rpx;height:40rpx;;margin-top:22rpx;margin-left:20rpx;"></image>
+    </view>
+    <view class='down_img' bindtap='showList' style='display:{{down_arrow}}'>
+      <image src="/images/down.png" style="width:40rpx;height:34rpx;margin-top:22rpx;margin-left:20rpx;"></image>
+    </view> --> 
+    <!-- <view class="img_item">
+        <button wx:for="{{col2}}" wx:key="id">
+          <image src="{{item.image}}" class='wu' style="width:100%;height:{{item.height}}px"></image>
+          <view class='neitex'>{{item.description}}</view>
+          <view class='hhuy'>
+            <view class='hrow l huy'>
+              <image class='wusi' src='{{item.r_image}}'></image>
+              <view class='shi'></view>
+              <view class='ersilu'>{{item.home_uaer_name}}</view>
+            </view>
+            <view class='hrow r huy'>
+              <image class='shij' src='/images/hnr/nrdz.png'></image>
+              <view class='shi'></view>
+              <view class='ersilu'>{{item.praise}}</view>
+            </view>
+          </view>
+        </button>
+      </view> -->
